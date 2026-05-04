@@ -792,15 +792,11 @@ response = generator_agent.generate(
 
 ---
 
-**下一步**: 恭喜!你已完成模块七《Agent 生态与协议》的学习。现在你可以:
-
-1. [尝试构建自己的 Agent](/practical/01-quick-start)
-2. [探索实战项目](/practical/02-projects)
-3. [返回课程目录](/preface)
+**下一步**: 在[下一章](07-hermes-agent-overview)中，我们将了解一个全新的项目——Hermes Agent，一个具备自学习循环的开源 Agent 平台。
 
 ---
 
-[← 返回模块目录](/agent-ecosystem/07-agent-ecosystem)
+[← 返回模块目录](/agent-ecosystem/07-agent-ecosystem) | [继续学习:Hermes Agent 概述 →](/agent-ecosystem/07-agent-ecosystem/07-hermes-agent-overview)
 
 ---
 

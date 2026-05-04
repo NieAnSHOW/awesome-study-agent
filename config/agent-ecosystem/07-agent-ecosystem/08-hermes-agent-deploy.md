@@ -618,7 +618,7 @@ hermes claw migrate
 
 ---
 
-**下一步**: 恭喜你完成了模块 07（Agent 生态）的全部内容。现在你已经了解了主流 Agent 框架、平台、技能系统和 Hermes Agent 的部署实战。接下来可以进入**附录部分**查阅术语表、工具清单或常见问题，或开始学习其他模块。
+**下一步**: 部署好 Hermes Agent 之后，让我们转向另一个方向——了解[Claude 的设计能力](09-claude-design)。
 
 ---
 
@@ -634,4 +634,4 @@ hermes claw migrate
 
 ---
 
-[← 返回模块目录](/agent-ecosystem/07-agent-ecosystem)
+[← 返回模块目录](/agent-ecosystem/07-agent-ecosystem) | [继续学习:Claude 设计能力 →](/agent-ecosystem/07-agent-ecosystem/09-claude-design)

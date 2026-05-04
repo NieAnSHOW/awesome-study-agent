@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { defineTeekConfig } from "vitepress-theme-teek/config";
+import { withMermaid } from "vitepress-plugin-mermaid";
 // Teek 主题配置
 const teekConfig = defineTeekConfig({
   themeEnhance: {
@@ -44,7 +45,7 @@ const teekConfig = defineTeekConfig({
 });
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default withMermaid(defineConfig({
   extends: teekConfig,
   title: "Awesome Study Agent",
   description: "系统性学习 AI Agent，从零基础到实战专家，让你轻松掌握 AI Agent 核心技能",
@@ -84,6 +85,7 @@ export default defineConfig({
           { text: 'Hermes Agent', link: '/agent-ecosystem/07-agent-ecosystem/07-hermes-agent-overview' },
           { text: 'Claude 设计', link: '/agent-ecosystem/07-agent-ecosystem/09-claude-design' },
           { text: 'Pencil 设计', link: '/agent-ecosystem/07-agent-ecosystem/10-pencil-intro' },
+          { text: 'DeerFlow', link: '/agent-ecosystem/07-agent-ecosystem/12-deerflow-overview' },
           { text: 'Agent Skills', link: '/agent-ecosystem/09-agent-skills/' },
           { text: 'OpenClaw', link: '/agent-ecosystem/10-openclaw/' },
           { text: 'WorkBuddy', link: '/agent-ecosystem/11-workbuddy/' },
@@ -268,6 +270,14 @@ export default defineConfig({
                 items: [
                   { text: 'Pencil 原型设计工具入门', link: '07-agent-ecosystem/10-pencil-intro' },
                   { text: 'Pencil MCP 集成', link: '07-agent-ecosystem/11-pencil-mcp' },
+                ]
+              },
+              {
+                text: 'DeerFlow',
+                collapsed: true,
+                items: [
+                  { text: 'DeerFlow 概述', link: '07-agent-ecosystem/12-deerflow-overview' },
+                  { text: 'DeerFlow 实战部署', link: '07-agent-ecosystem/13-deerflow-deploy' },
                 ]
               },
               {
@@ -511,5 +521,17 @@ export default defineConfig({
     config: (md) => {
       // 可以在这里添加 markdown-it 插件
     }
+  },
+
+  // Vite 配置 — 修复 pnpm 下 mermaid/dayjs ESM 兼容问题
+  vite: {
+    optimizeDeps: {
+      include: ['dayjs', 'mermaid', '@braintree/sanitize-url', 'debug', 'cytoscape']
+    },
+    resolve: {
+      alias: [
+        { find: /^dayjs\/(.*)\.js$/, replacement: 'dayjs/esm/$1' }
+      ]
+    }
   }
-})
+}))

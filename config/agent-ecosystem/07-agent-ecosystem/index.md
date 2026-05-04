@@ -6,7 +6,7 @@
 >
 > **前置知识**：完成模块四《Agent 基础与架构》的学习
 >
-> **最后更新**：2025 年 1 月
+> **最后更新**：2026 年 5 月
 
 ## 模块介绍
 
@@ -19,6 +19,7 @@
 - **Skills 系统** - Claude Agent 的能力复用机制
 - **Function Calling** - 工具调用的技术实现和最佳实践
 - **Agent 编排** - 多 Agent 协作的架构模式和生产实践
+- **DeerFlow** - 字节跳动开源的 Super Agent Harness，完整运行时与编排
 
 ### 为什么这一模块很重要？
 
@@ -65,6 +66,8 @@
 9. [Claude 设计能力](/agent-ecosystem/07-agent-ecosystem/09-claude-design) - 用 AI 进行 UI/UX 设计
 10. [Pencil 原型设计工具入门](/agent-ecosystem/07-agent-ecosystem/10-pencil-intro) - 开源原型工具快速上手
 11. [Pencil MCP 集成](/agent-ecosystem/07-agent-ecosystem/11-pencil-mcp) - Agent 驱动设计的自动化工作流
+12. [DeerFlow 概述](/agent-ecosystem/07-agent-ecosystem/12-deerflow-overview) - Super Agent Harness 架构与核心概念
+13. [DeerFlow 实战部署](/agent-ecosystem/07-agent-ecosystem/13-deerflow-deploy) - 安装配置与使用指南
 
 ## 学习检验
 
@@ -81,6 +84,8 @@
 - [ ] 了解 Hermes Agent 的自学习循环机制和部署方式
 - [ ] 掌握用 Claude 进行设计协作的方法
 - [ ] 理解 Pencil 原型工具及 MCP 集成的工作流
+- [ ] 理解 DeerFlow 的 Super Agent Harness 定位和编排模式
+- [ ] 能独立完成 DeerFlow 的 Docker 部署和基本使用
 
 ## 扩展阅读
 
@@ -104,6 +109,12 @@
 - [MCP Servers Registry](https://registry.anthropic.com/) - 社区贡献的 MCP 服务器
 - [Claude Agent Skills Gallery](https://www.anthropic.com/skills) - 官方和社区 Skills
 - [GitHub: awesome-agents](https://github.com/e2b-dev/awesome-ai-agents) - Agent 项目精选
+
+**DeerFlow 专题**：
+- [DeerFlow GitHub 仓库](https://github.com/bytedance/deer-flow) - 开源 Super Agent Harness
+- [DeerFlow 官网](https://deerflow.tech) - 官方文档和演示
+- [Dify 官网](https://dify.ai) - 开源 LLMOps 平台
+- [扣子(Coze) 官网](https://www.coze.com) - AI Bot 开发平台
 
 ---
 

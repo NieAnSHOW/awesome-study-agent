@@ -65,23 +65,33 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '序言', link: '/preface' },
       {
-        text: '基础知识',
+        text: 'AI 基础知识',
         items: [
           { text: 'AI 概述', link: '/basics/01-ai-overview/' },
           { text: 'LLM 基础', link: '/basics/02-llm-fundamentals/' },
           { text: '提示词工程', link: '/basics/03-prompt-engineering/' },
           { text: 'Agent 基础', link: '/basics/04-agent-fundamentals/' },
           { text: 'RAG 技术', link: '/basics/05-rag-knowledge/' },
+          { text: '模型训练', link: '/basics/08-model-training/' },
+          { text: '多模态 AI 技术', link: '/basics/13-multimodal-ai/' },
+        ]
+      },
+      {
+        text: 'Agent 生态',
+        items: [
           { text: 'AI 编程工具', link: '/basics/06-ai-coding-tools/' },
           { text: 'Agent 生态', link: '/basics/07-agent-ecosystem/' },
-          { text: '模型训练', link: '/basics/08-model-training/' },
           { text: 'Agent Skills', link: '/basics/09-agent-skills/' },
           { text: 'OpenClaw', link: '/basics/10-openclaw/' },
           { text: 'WorkBuddy', link: '/basics/11-workbuddy/' },
           { text: 'AI 视频生成', link: '/basics/12-ai-video-generation/' },
-          { text: '多模态 AI 技术', link: '/basics/13-multimodal-ai/' },
           { text: 'AI 图像生成', link: '/basics/14-ai-image-generation/' },
-          { text: 'Markdown 阅读工具', link: '/basics/15-markdown-reading-tools/' },
+        ]
+      },
+      {
+        text: '工具推荐',
+        items: [
+          { text: 'Markdown 阅读工具', link: '/tools-recommendation/15-markdown-reading-tools/' },
         ]
       },
       {
@@ -100,7 +110,6 @@ export default defineConfig({
           { text: '提示词库', link: '/appendix/prompts-library' },
           { text: 'FAQ', link: '/appendix/faq' },
           { text: '资源推荐', link: '/appendix/resources' },
-          { text: '更新日志', link: '/appendix/changelog' },
         ]
       },
     ],
@@ -288,19 +297,6 @@ export default defineConfig({
                   { text: '商业应用与案例', link: '14-ai-image-generation/06-business-cases' },
                 ]
               },
-              {
-                text: '模块十五：Markdown 阅读工具',
-                collapsed: true,
-                items: [
-                  { text: '模块介绍', link: '15-markdown-reading-tools/' },
-                  { text: 'Obsidian', link: '15-markdown-reading-tools/01-obsidian' },
-                  { text: 'Logseq', link: '15-markdown-reading-tools/02-logseq' },
-                  { text: 'MarkText', link: '15-markdown-reading-tools/03-marktext' },
-                  { text: 'Joplin', link: '15-markdown-reading-tools/04-joplin' },
-                  { text: 'Zettlr', link: '15-markdown-reading-tools/05-zettlr' },
-                  { text: '横向对比与选型', link: '15-markdown-reading-tools/06-comparison' },
-                ]
-              },
             ]
           }
         ]
@@ -391,6 +387,30 @@ export default defineConfig({
               { text: '提示词模板库', link: 'prompts-library' },
               { text: '常见问题', link: 'faq' },
               { text: '资源推荐', link: 'resources' },
+            ]
+          }
+        ]
+      },
+      '/tools-recommendation/': {
+        base: '/tools-recommendation/',
+        items: [
+          {
+            text: '工具推荐',
+            items: [
+              { text: '概览', link: '/' },
+              {
+                text: 'Markdown 阅读工具',
+                collapsed: false,
+                items: [
+                  { text: '模块介绍', link: '15-markdown-reading-tools/' },
+                  { text: 'Obsidian', link: '15-markdown-reading-tools/01-obsidian' },
+                  { text: 'Logseq', link: '15-markdown-reading-tools/02-logseq' },
+                  { text: 'MarkText', link: '15-markdown-reading-tools/03-marktext' },
+                  { text: 'Joplin', link: '15-markdown-reading-tools/04-joplin' },
+                  { text: 'Zettlr', link: '15-markdown-reading-tools/05-zettlr' },
+                  { text: '横向对比与选型', link: '15-markdown-reading-tools/06-comparison' },
+                ]
+              },
             ]
           }
         ]

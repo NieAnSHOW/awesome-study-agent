@@ -343,7 +343,7 @@ Pencil 是一款专业的设计工具，与 Claude 搭配使用时：
 - [ ] 掌握使用提示词避免 "AI 风格" 的方法
 - [ ] 能够描述从设计原型到开发资产的完整转换流程
 - [ ] 知道如何将 Claude 与 Figma、Pencil 等工具配合使用
-- [ ] 了解设计类提示词的核心策略（肯定式表达、引用美学风格、指定具体值）
+- [ ] 能掌握设计类提示词的核心策略（肯定式表达、引用美学风格、指定具体值）
 :::
 
 ---
@@ -378,7 +378,7 @@ Pencil 是一款专业的设计工具，与 Claude 搭配使用时：
 
 ---
 
-**下一步**: 了解完 Claude 的设计能力后，你可以进一步探索 Pencil 工具的设计能力，或者了解 Hermes Agent 在自动化工作流中的应用。
+**下一步**: 了解完 Claude 的设计能力后，你可以进一步探索 [Pencil](/agent-ecosystem/07-agent-ecosystem/10-pencil-intro) 工具的设计能力，或者了解 [Hermes Agent](/agent-ecosystem/07-agent-ecosystem/07-hermes-agent-overview) 在自动化工作流中的应用。
 
 ---
 
@@ -388,9 +388,9 @@ Pencil 是一款专业的设计工具，与 Claude 搭配使用时：
 - [Claude for Creative Work](https://www.anthropic.com/news/claude-for-creative-work)
 - [Claude Design Review: Features, Pros, Cons](https://animaapp.com/blog/ai-design-en/claude-design-review-features-pros-cons-and-best-alternatives/)
 - [How to Use Claude Design for UX/UI](https://designerup.co/blog/how-to-use-claude-design-for-ux-ui/)
-- [Pencil 设计工具介绍](/agent-ecosystem/07-agent-ecosystem/03-mcp-protocol)
+- [Pencil 设计工具介绍](/agent-ecosystem/07-agent-ecosystem/10-pencil-intro)
 - [MCP 协议基础](/agent-ecosystem/07-agent-ecosystem/03-mcp-protocol)
 
 ---
 
-[← 返回模块目录](/agent-ecosystem/07-agent-ecosystem)
+[← 返回模块目录](/agent-ecosystem/07-agent-ecosystem) | [继续学习：Pencil 原型设计工具入门 →](/agent-ecosystem/07-agent-ecosystem/10-pencil-intro)

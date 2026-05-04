@@ -81,6 +81,9 @@ export default defineConfig({
         items: [
           { text: 'AI 编程工具', link: '/agent-ecosystem/06-ai-coding-tools/' },
           { text: 'Agent 生态', link: '/agent-ecosystem/07-agent-ecosystem/' },
+          { text: 'Hermes Agent', link: '/agent-ecosystem/07-agent-ecosystem/07-hermes-agent-overview' },
+          { text: 'Claude 设计', link: '/agent-ecosystem/07-agent-ecosystem/09-claude-design' },
+          { text: 'Pencil 设计', link: '/agent-ecosystem/07-agent-ecosystem/10-pencil-intro' },
           { text: 'Agent Skills', link: '/agent-ecosystem/09-agent-skills/' },
           { text: 'OpenClaw', link: '/agent-ecosystem/10-openclaw/' },
           { text: 'WorkBuddy', link: '/agent-ecosystem/11-workbuddy/' },

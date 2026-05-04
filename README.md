@@ -125,7 +125,7 @@ pnpm run docs:build
 
 ## 从哪开始
 
-[序言：课程大纲](config/preface.md) → [开始学习](config/basics/01-ai-overview/)
+[序言：课程大纲](config/preface.md) → [开始学习](config/ai-basics/01-ai-overview/)
 
 或者直接看目录结构找到你感兴趣的模块。
 

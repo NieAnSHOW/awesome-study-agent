@@ -67,25 +67,25 @@ export default defineConfig({
       {
         text: 'AI 基础知识',
         items: [
-          { text: 'AI 概述', link: '/basics/01-ai-overview/' },
-          { text: 'LLM 基础', link: '/basics/02-llm-fundamentals/' },
-          { text: '提示词工程', link: '/basics/03-prompt-engineering/' },
-          { text: 'Agent 基础', link: '/basics/04-agent-fundamentals/' },
-          { text: 'RAG 技术', link: '/basics/05-rag-knowledge/' },
-          { text: '模型训练', link: '/basics/08-model-training/' },
-          { text: '多模态 AI 技术', link: '/basics/13-multimodal-ai/' },
+          { text: 'AI 概述', link: '/ai-basics/01-ai-overview/' },
+          { text: 'LLM 基础', link: '/ai-basics/02-llm-fundamentals/' },
+          { text: '提示词工程', link: '/ai-basics/03-prompt-engineering/' },
+          { text: 'Agent 基础', link: '/ai-basics/04-agent-fundamentals/' },
+          { text: 'RAG 技术', link: '/ai-basics/05-rag-knowledge/' },
+          { text: '模型训练', link: '/ai-basics/08-model-training/' },
+          { text: '多模态 AI 技术', link: '/ai-basics/13-multimodal-ai/' },
         ]
       },
       {
         text: 'Agent 生态',
         items: [
-          { text: 'AI 编程工具', link: '/basics/06-ai-coding-tools/' },
-          { text: 'Agent 生态', link: '/basics/07-agent-ecosystem/' },
-          { text: 'Agent Skills', link: '/basics/09-agent-skills/' },
-          { text: 'OpenClaw', link: '/basics/10-openclaw/' },
-          { text: 'WorkBuddy', link: '/basics/11-workbuddy/' },
-          { text: 'AI 视频生成', link: '/basics/12-ai-video-generation/' },
-          { text: 'AI 图像生成', link: '/basics/14-ai-image-generation/' },
+          { text: 'AI 编程工具', link: '/agent-ecosystem/06-ai-coding-tools/' },
+          { text: 'Agent 生态', link: '/agent-ecosystem/07-agent-ecosystem/' },
+          { text: 'Agent Skills', link: '/agent-ecosystem/09-agent-skills/' },
+          { text: 'OpenClaw', link: '/agent-ecosystem/10-openclaw/' },
+          { text: 'WorkBuddy', link: '/agent-ecosystem/11-workbuddy/' },
+          { text: 'AI 视频生成', link: '/agent-ecosystem/12-ai-video-generation/' },
+          { text: 'AI 图像生成', link: '/agent-ecosystem/14-ai-image-generation/' },
         ]
       },
       {
@@ -116,15 +116,15 @@ export default defineConfig({
 
     // 侧边栏配置
     sidebar: {
-      '/basics/': {
-        base: '/basics/',
+      '/ai-basics/': {
+        base: '/ai-basics/',
         items: [
           {
-            text: '基础型路径',
+            text: 'AI 基础知识',
             items: [
               {
                 text: '模块一：AI 概述与 Agent 概念',
-                collapsed: false,
+                collapsed: true,
                 items: [
                   { text: '模块介绍', link: '01-ai-overview/' },
                   { text: '什么是 AI？', link: '01-ai-overview/01-what-is-ai' },
@@ -183,6 +183,42 @@ export default defineConfig({
                 ]
               },
               {
+                text: '模块八：模型训练与优化',
+                collapsed: true,
+                items: [
+                  { text: '模块介绍', link: '08-model-training/' },
+                  { text: '微调基础', link: '08-model-training/01-fine-tuning-basics' },
+                  { text: '微调准备', link: '08-model-training/02-preparation' },
+                  { text: '微调实践', link: '08-model-training/03-fine-tuning-practice' },
+                  { text: '模型优化', link: '08-model-training/04-model-optimization' },
+                  { text: '模型部署', link: '08-model-training/05-deployment' },
+                  { text: '模型评估', link: '08-model-training/06-evaluation' },
+                ]
+              },
+              {
+                text: '模块十三：多模态 AI 技术',
+                collapsed: true,
+                items: [
+                  { text: '模块介绍', link: '13-multimodal-ai/' },
+                  { text: '核心概念', link: '13-multimodal-ai/01-concepts' },
+                  { text: '模型架构', link: '13-multimodal-ai/02-architectures' },
+                  { text: '跨模态对齐', link: '13-multimodal-ai/03-cross-modal-alignment' },
+                  { text: '多模态 Transformer', link: '13-multimodal-ai/04-multimodal-transformers' },
+                  { text: '应用场景', link: '13-multimodal-ai/05-applications' },
+                  { text: 'Agent 集成实践', link: '13-multimodal-ai/06-agent-integration' },
+                ]
+              },
+            ]
+          }
+        ]
+      },
+      '/agent-ecosystem/': {
+        base: '/agent-ecosystem/',
+        items: [
+          {
+            text: 'Agent 生态',
+            items: [
+              {
                 text: '模块六：AI 编程工具',
                 collapsed: true,
                 items: [
@@ -206,19 +242,6 @@ export default defineConfig({
                   { text: 'Skills 系统', link: '07-agent-ecosystem/04-skills-system' },
                   { text: 'Function Calling', link: '07-agent-ecosystem/05-function-calling' },
                   { text: 'Agent 编排', link: '07-agent-ecosystem/06-orchestration' },
-                ]
-              },
-              {
-                text: '模块八：模型训练与优化',
-                collapsed: true,
-                items: [
-                  { text: '模块介绍', link: '08-model-training/' },
-                  { text: '微调基础', link: '08-model-training/01-fine-tuning-basics' },
-                  { text: '微调准备', link: '08-model-training/02-preparation' },
-                  { text: '微调实践', link: '08-model-training/03-fine-tuning-practice' },
-                  { text: '模型优化', link: '08-model-training/04-model-optimization' },
-                  { text: '模型部署', link: '08-model-training/05-deployment' },
-                  { text: '模型评估', link: '08-model-training/06-evaluation' },
                 ]
               },
               {
@@ -269,19 +292,6 @@ export default defineConfig({
                   { text: '实战指南', link: '12-ai-video-generation/04-practical-guide' },
                   { text: '创作工作流', link: '12-ai-video-generation/05-creation-workflow' },
                   { text: '商业应用', link: '12-ai-video-generation/06-business-application' },
-                ]
-              },
-              {
-                text: '模块十三：多模态 AI 技术',
-                collapsed: true,
-                items: [
-                  { text: '模块介绍', link: '13-multimodal-ai/' },
-                  { text: '核心概念', link: '13-multimodal-ai/01-concepts' },
-                  { text: '模型架构', link: '13-multimodal-ai/02-architectures' },
-                  { text: '跨模态对齐', link: '13-multimodal-ai/03-cross-modal-alignment' },
-                  { text: '多模态 Transformer', link: '13-multimodal-ai/04-multimodal-transformers' },
-                  { text: '应用场景', link: '13-multimodal-ai/05-applications' },
-                  { text: 'Agent 集成实践', link: '13-multimodal-ai/06-agent-integration' },
                 ]
               },
               {

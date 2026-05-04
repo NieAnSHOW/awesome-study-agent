@@ -122,9 +122,8 @@ Pencil MCP 服务器暴露了 **16 个工具**，分为几个功能组：
 
 | 工具 | 功能 | 典型用法 |
 |------|------|---------|
-| `get_guidelines` | 获取设计指南 | 加载 `web-app` / `mobile-app` 等设计规范 |
-| `get_style_guide` | 按标签获取风格指南 | 获取 warm / tech / minimalist 等风格 |
-| `get_style_guide_tags` | 列出所有可用的风格标签 | 查看所有风格选项 |
+| `get_guidelines` | 获取设计规范 | 加载 `web-app` / `mobile-app` 等设计规范 |
+| `get_guidelines` | 获取风格指南 | 加载 tech / warm / minimalist 等风格 |
 
 #### 导出与协作
 
@@ -195,38 +194,25 @@ Pencil MCP 支持以下平台，其中部分会自动配置：
 ```
 
 **步骤 2**: 创建画布和页面结构
-```json
+```javascript
 // 工具调用: batch_design
 // 创建主框架和子元素
-[
-  // 操作 1: 创建页面对话框
-  { "type": "I", "parent": "document", "data": {
-    "type": "frame",
-    "name": "登录页面",
-    "width": 1440,
-    "height": 900,
-    "layout": "vertical"
-  }},
-  // 操作 2: 添加标题
-  { "type": "I", "parent": "frame-1", "data": {
-    "type": "text",
-    "name": "标题",
-    "content": "欢迎回来",
-    "fontSize": 32,
-    "fontWeight": "bold"
-  }}
-]
+page=I("document", { type: "frame", name: "登录页面", width: 1440, height: 900, layout: "vertical" })
+title=I(page, { type: "text", name: "标题", content: "欢迎回来", fontSize: 32, fontWeight: "bold" })
 ```
 
 **步骤 3**: 设置设计变量
 ```json
 // 工具调用: set_variables
 {
-  "primary": "#3B82F6",
-  "secondary": "#6366F1",
-  "background": "#FFFFFF",
-  "text": "#1F2937",
-  "border-radius": "8px"
+  "filePath": "design.pen",
+  "variables": {
+    "primary": "#3B82F6",
+    "secondary": "#6366F1",
+    "background": "#FFFFFF",
+    "text": "#1F2937",
+    "border-radius": "8px"
+  }
 }
 ```
 
@@ -254,21 +240,11 @@ Pencil MCP 支持以下平台，其中部分会自动配置：
 
 ### 调整元素属性
 
-```json
+```javascript
 // 工具调用: batch_design
 // 更新按钮颜色和圆角
-[
-  { "type": "U", "target": "frame-1/btn-login", "data": {
-    "fill": "$primary",
-    "cornerRadius": [8, 8, 8, 8],
-    "padding": [12, 24, 12, 24]
-  }},
-  { "type": "U", "target": "frame-1/btn-register", "data": {
-    "fill": "$secondary",
-    "cornerRadius": [8, 8, 8, 8],
-    "padding": [12, 24, 12, 24]
-  }}
-]
+U("frame-1/btn-login", { fill: "$primary", cornerRadius: [8, 8, 8, 8], padding: [12, 24, 12, 24] })
+U("frame-1/btn-register", { fill: "$secondary", cornerRadius: [8, 8, 8, 8], padding: [12, 24, 12, 24] })
 ```
 
 ### 查找空白区域并插入新元素
@@ -295,15 +271,19 @@ Pencil MCP 支持以下平台，其中部分会自动配置：
 // 工具调用: export_nodes
 // 导出为 PNG
 {
+  "filePath": "design.pen",
   "nodeIds": ["frame-1"],
   "format": "png",
-  "scale": 2
+  "scale": 2,
+  "outputDir": "./exports"
 }
 
 // 导出为 PDF（多页）
 {
+  "filePath": "design.pen",
   "nodeIds": ["frame-1", "frame-2"],
-  "format": "pdf"
+  "format": "pdf",
+  "outputDir": "./exports"
 }
 ```
 
@@ -330,7 +310,7 @@ Agent 内部自动执行的操作序列：
 
 ```
 1. get_guidelines("mobile-app")      → 获取移动端设计规范
-2. get_style_guide("tech")           → 获取科技感风格指南
+2. get_guidelines({category: "style", name: "tech"}) → 获取科技感风格指南
 3. open_document("new")              → 创建新画布
 4. batch_design (8 次操作)           → 创建 Logo、输入框、按钮、文字
 5. set_variables                     → 设置蓝色主题变量
@@ -344,20 +324,12 @@ Agent 内部自动执行的操作序列：
 
 当需要跨设计文件执行一致性修改时，批量操作的优势就体现出来了：
 
-```json
+```javascript
 // 将画布上所有按钮的圆角从 4px 改为 8px
 // 步骤 1: 搜索所有按钮
-[
-  { "type": "U", "target": "main-frame/btn-login", "data": {
-    "cornerRadius": [8, 8, 8, 8]
-  }},
-  { "type": "U", "target": "main-frame/btn-signup", "data": {
-    "cornerRadius": [8, 8, 8, 8]
-  }},
-  { "type": "U", "target": "main-frame/btn-submit", "data": {
-    "cornerRadius": [8, 8, 8, 8]
-  }}
-]
+U("main-frame/btn-login", { cornerRadius: [8, 8, 8, 8] })
+U("main-frame/btn-signup", { cornerRadius: [8, 8, 8, 8] })
+U("main-frame/btn-submit", { cornerRadius: [8, 8, 8, 8] })
 ```
 
 对于更大范围的修改，可以使用 `replace_all_matching_properties` 工具：
@@ -428,7 +400,7 @@ Agent 可以在对话中调整 `columns` 和 `color` 参数，画布内容实时
 第 1 步: get_guidelines("web-app")
 → 获取 Web 应用设计规范
 
-第 2 步: get_style_guide_tags()
+第 2 步: get_guidelines()
 → 查找是否有 glassmorphism 风格标签
 → 取相近的 "modern-minimal" 风格
 
@@ -556,7 +528,7 @@ Agent 流程：
 - 文档操作: `open_document`、`get_editor_state`
 - 读取搜索: `batch_get`、`get_variables`、`get_screenshot`、`snapshot_layout`
 - 创建修改: `batch_design`、`set_variables`、`find_empty_space_on_canvas`
-- 设计辅助: `get_guidelines`、`get_style_guide`、`get_style_guide_tags`
+- 设计辅助: `get_guidelines`（支持 guide 和 style 两种分类）
 - 导出协作: `export_nodes`、`spawn_agents`
 
 ✅ **核心操作**

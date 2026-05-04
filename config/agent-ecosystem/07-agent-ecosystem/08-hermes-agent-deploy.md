@@ -128,6 +128,64 @@ docker rm -f hermes
 # 重新运行上面的 gateway 启动命令
 ```
 
+### 使用 docker-compose.yml
+
+对于需要同时启动 Gateway 和 Web Dashboard 的场景，使用 `docker-compose.yml` 更加方便：
+
+```yaml
+# docker-compose.yml
+version: '3.8'
+
+services:
+  hermes-gateway:
+    image: nousresearch/hermes-agent:latest
+    container_name: hermes
+    restart: unless-stopped
+    volumes:
+      - ~/.hermes:/opt/data
+    command: gateway run
+
+  hermes-dashboard:
+    image: nousresearch/hermes-agent:latest
+    container_name: hermes-dashboard
+    restart: unless-stopped
+    ports:
+      - "9119:9119"
+    volumes:
+      - ~/.hermes:/opt/data
+    command: dashboard
+    depends_on:
+      - hermes-gateway
+```
+
+**docker-compose.yml 配置要点**：
+
+| 配置项 | 说明 |
+|--------|------|
+| `services` | 定义多个服务容器，本例中包含了 Gateway 和 Dashboard |
+| `volumes` | 将宿主机的 `~/.hermes` 挂载到容器内的 `/opt/data`，确保数据持久化 |
+| `ports` | 将容器的 9119 端口映射到宿主机，用于访问 Web Dashboard |
+| `restart: unless-stopped` | 容器退出时自动重启，除非手动停止 |
+| `depends_on` | Dashboard 服务依赖 Gateway 服务先启动 |
+
+**启动和停止**：
+
+```bash
+# 启动所有服务（后台运行）
+docker compose up -d
+
+# 查看运行状态
+docker compose ps
+
+# 查看实时日志
+docker compose logs -f
+
+# 停止所有服务
+docker compose down
+```
+
+使用 `docker-compose.yml` 的优势在于：**配置即代码**——团队共享配置、一键启动所有服务、管理日志方便。如果只是快速测试或单容器运行，`docker run` 命令更简洁。
+
 ---
 
 ## VPS 部署实战
@@ -163,6 +221,48 @@ curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scri
 ```bash
 source ~/.bashrc   # 或 source ~/.zshrc
 ```
+
+### 使用 uv 包管理器
+
+Hermes Agent 推荐使用 **uv** 作为 Python 包管理器。uv 由 Rust 编写，比传统 pip 快 10-100 倍，并内置虚拟环境管理。
+
+**安装 uv**：
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+source ~/.bashrc  # 或 source ~/.zshrc
+```
+
+**验证安装**：
+
+```bash
+uv --version
+```
+
+**使用 uv 管理 Hermes Agent 依赖**：
+
+安装完 uv 后，用以下命令克隆仓库并安装依赖：
+
+```bash
+git clone https://github.com/NousResearch/hermes-agent.git
+cd hermes-agent
+uv sync
+```
+
+`uv sync` 命令会读取项目的 `pyproject.toml` 或 `uv.lock` 文件，自动创建虚拟环境并锁定所有依赖版本，确保环境可复现。
+
+**常用 uv 命令**：
+
+| 命令 | 用途 |
+|------|------|
+| `uv sync` | 安装项目所有依赖，生成锁文件 |
+| `uv add <package>` | 添加新依赖 |
+| `uv remove <package>` | 移除依赖 |
+| `uv run <command>` | 在项目虚拟环境中运行命令 |
+| `uv pip list` | 查看已安装的包 |
+| `uv cache clean` | 清理缓存，释放磁盘空间 |
+
+**与一键安装脚本的关系**：官方一键安装脚本（`install.sh`）在后台也会使用 uv 作为包管理器。如果你想自定义安装过程或手动管理依赖，可直接使用 uv 命令。
 
 ### 初始配置
 

@@ -123,7 +123,7 @@ export default defineConfig({
             text: 'AI 基础知识',
             items: [
               {
-                text: '模块一：AI 概述与 Agent 概念',
+                text: 'AI 概述与 Agent 概念',
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '01-ai-overview/' },
@@ -134,7 +134,7 @@ export default defineConfig({
                 ]
               },
               {
-                text: '模块二：大语言模型基础',
+                text: '大语言模型基础',
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '02-llm-fundamentals/' },
@@ -146,7 +146,7 @@ export default defineConfig({
                 ]
               },
               {
-                text: '模块三：提示词工程',
+                text: '提示词工程',
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '03-prompt-engineering/' },
@@ -158,7 +158,7 @@ export default defineConfig({
                 ]
               },
               {
-                text: '模块四：Agent 基础与架构',
+                text: 'Agent 基础与架构',
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '04-agent-fundamentals/' },
@@ -170,7 +170,7 @@ export default defineConfig({
                 ]
               },
               {
-                text: '模块五：RAG 与知识增强',
+                text: 'RAG 与知识增强',
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '05-rag-knowledge/' },
@@ -183,7 +183,7 @@ export default defineConfig({
                 ]
               },
               {
-                text: '模块八：模型训练与优化',
+                text: '模型训练与优化',
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '08-model-training/' },
@@ -196,7 +196,7 @@ export default defineConfig({
                 ]
               },
               {
-                text: '模块十三：多模态 AI 技术',
+                text: '多模态 AI 技术',
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '13-multimodal-ai/' },
@@ -219,7 +219,7 @@ export default defineConfig({
             text: 'Agent 生态',
             items: [
               {
-                text: '模块六：AI 编程工具',
+                text: 'AI 编程工具',
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '06-ai-coding-tools/' },
@@ -232,7 +232,7 @@ export default defineConfig({
                 ]
               },
               {
-                text: '模块七：Agent 生态与协议',
+                text: 'Agent 生态与协议',
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '07-agent-ecosystem/' },
@@ -245,7 +245,7 @@ export default defineConfig({
                 ]
               },
               {
-                text: '模块九：Agent Skills 系统',
+                text: 'Agent Skills 系统',
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '09-agent-skills/' },
@@ -257,7 +257,7 @@ export default defineConfig({
                 ]
               },
               {
-                text: '模块十：OpenClaw 开源 AI 助手',
+                text: 'OpenClaw 开源 AI 助手',
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '10-openclaw/' },
@@ -269,7 +269,7 @@ export default defineConfig({
                 ]
               },
               {
-                text: '模块十一：WorkBuddy 数字员工实践',
+                text: 'WorkBuddy 数字员工实践',
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '11-workbuddy/' },
@@ -282,7 +282,7 @@ export default defineConfig({
                 ]
               },
               {
-                text: '模块十二：AI 视频生成',
+                text: 'AI 视频生成',
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '12-ai-video-generation/' },
@@ -295,7 +295,7 @@ export default defineConfig({
                 ]
               },
               {
-                text: '模块十四：AI 图像生成',
+                text: 'AI 图像生成',
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '14-ai-image-generation/' },

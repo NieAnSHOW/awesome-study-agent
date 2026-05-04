@@ -55,7 +55,7 @@
 | 模块 | 主题 | 篇数 |
 |------|------|------|
 | 六 | AI 编程工具（Cursor / Claude Code） | 7 |
-| 七 | Agent 生态与 MCP 协议 | 7 |
+| 七 | Agent 生态与 MCP 协议 | 12 |
 | 九 | Agent Skills 系统 | 6 |
 | 十 | OpenClaw 开源 AI 助手 | 6 |
 | 十一 | WorkBuddy 数字员工实践 | 7 |

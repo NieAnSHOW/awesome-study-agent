@@ -60,6 +60,11 @@
 4. [Skills 系统](/agent-ecosystem/07-agent-ecosystem/04-skills-system) - Agent 能力复用机制
 5. [Function Calling](/agent-ecosystem/07-agent-ecosystem/05-function-calling) - 工具调用的技术实现
 6. [Agent 编排](/agent-ecosystem/07-agent-ecosystem/06-orchestration) - 多 Agent 协作模式和生产实践
+7. [Hermes Agent 概述](/agent-ecosystem/07-agent-ecosystem/07-hermes-agent-overview) - 自学习 Agent 的开源实现
+8. [Hermes Agent 实战部署](/agent-ecosystem/07-agent-ecosystem/08-hermes-agent-deploy) - 多平台部署与技能开发
+9. [Claude 设计能力](/agent-ecosystem/07-agent-ecosystem/09-claude-design) - 用 AI 进行 UI/UX 设计
+10. [Pencil 原型设计工具入门](/agent-ecosystem/07-agent-ecosystem/10-pencil-intro) - 开源原型工具快速上手
+11. [Pencil MCP 集成](/agent-ecosystem/07-agent-ecosystem/11-pencil-mcp) - Agent 驱动设计的自动化工作流
 
 ## 学习检验
 
@@ -73,6 +78,9 @@
 - [ ] 设计多 Agent 协作架构（分层、顺序、并行、辩论）
 - [ ] 掌握生产环境的监控、成本控制和安全实践
 - [ ] 根据需求选择合适的技术栈和架构
+- [ ] 了解 Hermes Agent 的自学习循环机制和部署方式
+- [ ] 掌握用 Claude 进行设计协作的方法
+- [ ] 理解 Pencil 原型工具及 MCP 集成的工作流
 
 ## 扩展阅读
 

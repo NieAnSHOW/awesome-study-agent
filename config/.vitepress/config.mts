@@ -242,6 +242,11 @@ export default defineConfig({
                   { text: 'Skills 系统', link: '07-agent-ecosystem/04-skills-system' },
                   { text: 'Function Calling', link: '07-agent-ecosystem/05-function-calling' },
                   { text: 'Agent 编排', link: '07-agent-ecosystem/06-orchestration' },
+                  { text: 'Hermes Agent 概述', link: '07-agent-ecosystem/07-hermes-agent-overview' },
+                  { text: 'Hermes Agent 实战部署', link: '07-agent-ecosystem/08-hermes-agent-deploy' },
+                  { text: 'Claude 设计能力', link: '07-agent-ecosystem/09-claude-design' },
+                  { text: 'Pencil 原型设计工具入门', link: '07-agent-ecosystem/10-pencil-intro' },
+                  { text: 'Pencil MCP 集成', link: '07-agent-ecosystem/11-pencil-mcp' },
                 ]
               },
               {

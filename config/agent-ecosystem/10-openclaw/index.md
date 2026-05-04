@@ -1,4 +1,4 @@
-# 模块十：OpenClaw 开源 AI 助手
+# OpenClaw 开源 AI 助手
 
 > **学习目标**: 了解 OpenClaw 的定位和架构设计，掌握安装使用方法，理解自托管 Agent 的设计理念
 >

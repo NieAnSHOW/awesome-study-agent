@@ -1,4 +1,4 @@
-# 模块一:AI 概述与 Agent 概念
+# AI 概述与 Agent 概念
 
 > **学习目标**:建立对 AI 和 Agent 的基本认知,理解为什么 Agent 是下一代 AI 的核心
 >

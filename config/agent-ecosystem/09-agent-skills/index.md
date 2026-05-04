@@ -1,4 +1,4 @@
-# 模块九：Agent Skills 系统
+# Agent Skills 系统
 
 > **学习目标**: 掌握 Agent Skills 系统的设计理念和实战方法，能够独立设计和编写生产级 Skill
 >

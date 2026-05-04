@@ -17,7 +17,7 @@
 
 一个面向零基础学习者的 AI Agent 系统性知识库。**15 个基础模块 + 3 个深度指南 + 6 个附录**，目标是让你读完就能干活。
 
-[GitHub 仓库](https://github.com/NieAnSHOW/awesome-study-agent) · [在线阅读](https://github.com/NieAnSHOW/awesome-study-agent)
+[GitHub 仓库](https://github.com/NieAnSHOW/awesome-study-agent) · [在线阅读](https://agent.nieanshow.cn/)
 
 ---
 

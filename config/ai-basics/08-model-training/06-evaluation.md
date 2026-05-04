@@ -756,7 +756,7 @@ kappa = cohen_kappa_score(rater1, rater2)
 
 恭喜完成模块八学习!接下来:
 - [返回课程目录](/preface)
-- [进入模块九:Agent实战项目](/basics/09-agent-projects)
+- [进入 Agent Skills 系统](/agent-ecosystem/09-agent-skills/)
 
 ## 参考资料
 

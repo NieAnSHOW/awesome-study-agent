@@ -710,7 +710,7 @@ Agent: "已为您预订明天下午2点的航班,
 
 ## 总结
 
-恭喜!你已经完成了模块一:AI 概述与 Agent 概念的学习。
+恭喜!你已经完成了 AI 概述与 Agent 概念的学习。
 
 **你学到了**:
 - ✅ AI 的定义、类型和三大要素
@@ -721,7 +721,7 @@ Agent: "已为您预订明天下午2点的航班,
 **下一步**:
 模块二将深入探讨**大语言模型(LLM)基础**,理解 Agent 的核心技术。
 
-[← 返回模块首页](/ai-basics/01-ai-overview) | [开始模块二:大语言模型基础 →](/ai-basics/02-llm-fundamentals)
+[← 返回模块首页](/ai-basics/01-ai-overview) | [开始学习大语言模型基础 →](/ai-basics/02-llm-fundamentals)
 
 ---
 

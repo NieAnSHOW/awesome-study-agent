@@ -17,63 +17,63 @@ hero:
       link: /ai-basics/01-ai-overview/
 
 features:
-  - title: 🎯 模块一：AI 概述与 Agent 概念
+  - title: 🎯 AI 概述与 Agent 概念
     details: 不讲数学，不讲算法。讲清楚三件事——AI是什么、Agent是什么、为什么这两个东西结合在一起是大事。
     link: /ai-basics/01-ai-overview/
     linkText: 开始学习
-  - title: 🧠 模块二：大语言模型基础
+  - title: 🧠 大语言模型基础
     details: LLM 是 Agent 的"大脑"。不需要搞懂 Transformer 内部数学，但得明白 Token、Temperature、上下文窗口是什么。
     link: /ai-basics/02-llm-fundamentals/
     linkText: 了解 LLM
-  - title: ✍️ 模块三：提示词工程
+  - title: ✍️ 提示词工程
     details: 提示词不是"好好说话"，有模式有结构的。思维链、ReAct、角色扮演——学会了跟 AI 沟通效率翻倍。
     link: /ai-basics/03-prompt-engineering/
     linkText: 学习提示词
-  - title: 🤖 模块四：Agent 基础与架构
+  - title: 🤖 Agent 基础与架构
     details: Agent 的核心组件：感知、记忆、工具、规划、行动。讲清楚这些组件怎么拼在一起工作。
     link: /ai-basics/04-agent-fundamentals/
     linkText: 探索 Agent
-  - title: 📖 模块五：RAG 与知识增强
+  - title: 📖 RAG 与知识增强
     details: 最实用的 Agent 增强技术。文档分块、向量检索、混合搜索——搭 RAG 系统的必修课。
     link: /ai-basics/05-rag-knowledge/
     linkText: 学习 RAG
-  - title: 💻 模块六：AI 编程工具
+  - title: 💻 AI 编程工具
     details: Cursor 更适合做产品原型，Claude Code 更适合做复杂工程。CC Switch 是配置管理利器。
     link: /agent-ecosystem/06-ai-coding-tools/
     linkText: 工具入门
-  - title: 🔗 模块七：Agent 生态与协议
+  - title: 🔗 Agent 生态与协议
     details: MCP 协议是 Agent 生态里最重要的协议。LangChain/LangGraph 是生态最大的框架。搞清楚整个 Agent 世界的地图。
     link: /agent-ecosystem/07-agent-ecosystem/
     linkText: 探索生态
-  - title: ⚙️ 模块八：模型训练与优化
+  - title: ⚙️ 模型训练与优化
     details: 微调和 RAG 的区别是什么？什么时候该微调、什么时候不该？LoRA 和 QLoRA 是什么？
     link: /ai-basics/08-model-training/
     linkText: 学习训练
-  - title: 🧩 模块九：Agent Skills 系统
+  - title: 🧩 Agent Skills 系统
     details: Skills 是给 Agent 装"技能包"的机制。本质是给模型划定行为边界和能力范围。
     link: /agent-ecosystem/09-agent-skills/
     linkText: 了解 Skills
-  - title: 🐙 模块十：OpenClaw 开源 AI 助手
+  - title: 🐙 OpenClaw 开源 AI 助手
     details: 一个完整的开源 Agent 框架。它的 Skill 系统和四层记忆体系值得好好学习。
     link: /agent-ecosystem/10-openclaw/
     linkText: 了解 OpenClaw
-  - title: 👷 模块十一：WorkBuddy 数字员工实践
+  - title: 👷 WorkBuddy 数字员工实践
     details: 不做理论，全是场景案例——写周报、竞品分析、改 Bug、做设计。直接拿来用。
     link: /agent-ecosystem/11-workbuddy/
     linkText: 了解 WorkBuddy
-  - title: 🎬 模块十二：AI 视频生成
+  - title: 🎬 AI 视频生成
     details: Sora、Runway、可灵——不教你当导演，教你这些工具能干什么、怎么用在工作流里。
     link: /agent-ecosystem/12-ai-video-generation/
     linkText: 学习视频生成
-  - title: 🖼️ 模块十三：多模态 AI 技术
+  - title: 🖼️ 多模态 AI 技术
     details: 能看懂文字、图片、音频、视频的模型。Agent 从"聊天机器"变成"能理解世界的助手"的关键一步。
     link: /ai-basics/13-multimodal-ai/
     linkText: 学习多模态
-  - title: 🎨 模块十四：AI 图像生成
+  - title: 🎨 AI 图像生成
     details: Midjourney、Stable Diffusion、通义万相——工具不重要，提示词的工程方法重要。
     link: /agent-ecosystem/14-ai-image-generation/
     linkText: 学习图像生成
-  - title: 📝 模块十五：Markdown 阅读工具
+  - title: 📝 Markdown 阅读工具
     details: Obsidian、Logseq、MarkText——工具是手段不是目的，选一个建立自己的 AI 学习知识库。
     link: /tools-recommendation/15-markdown-reading-tools/
     linkText: 了解工具

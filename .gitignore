@@ -117,3 +117,6 @@ dist
 
 # Git worktrees
 .worktrees/
+.golutra
+.claude
+config/.vitepress/cache

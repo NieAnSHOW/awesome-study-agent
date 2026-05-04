@@ -134,7 +134,7 @@ Midjourney、Stable Diffusion、DALL·E、文心一格、通义万相——AI做
 **检验标准**：能稳定生成符合需求的图像，理解不同平台的能力边界。
 
 ### 模块十五：Markdown 阅读工具
-**路径**：`basics/15-markdown-reading-tools/`
+**路径**：`tools-recommendation/15-markdown-reading-tools/`
 **6篇文章**：Obsidian → Logseq → MarkText → Joplin → Zettlr → 横向对比
 
 这是AI学习者的"基础知识管理器"。我的选择：Obsidian。原因？插件生态、纯本地、Markdown原生。但工具是手段不是目的。

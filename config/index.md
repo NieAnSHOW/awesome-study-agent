@@ -75,7 +75,7 @@ features:
     linkText: 学习图像生成
   - title: 📝 模块十五：Markdown 阅读工具
     details: Obsidian、Logseq、MarkText——工具是手段不是目的，选一个建立自己的 AI 学习知识库。
-    link: /basics/15-markdown-reading-tools/
+    link: /tools-recommendation/15-markdown-reading-tools/
     linkText: 了解工具
   - title: 📘 深度指南
     details: Agent Skills 系统、大模型上下文管理、OpenClaw 架构——每个专题 14 篇文章的深度剖析。

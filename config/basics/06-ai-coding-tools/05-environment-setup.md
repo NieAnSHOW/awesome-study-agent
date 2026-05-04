@@ -858,4 +858,4 @@ claude "分析 @./full/path/to/file.ts"
 
 **恭喜！** 你已经完成模块六的学习。现在可以选择一个工具开始实践了。
 
-[← 返回课程首页](/curriculum)
+[← 返回课程首页](/preface)

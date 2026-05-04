@@ -15,7 +15,6 @@
 | [提示词模板库](/appendix/prompts-library) | 高质量提示词模板，直接复制使用 |
 | [常见问题](/appendix/faq) | 学习过程中的常见疑问和解答 |
 | [资源推荐](/appendix/resources) | 精选学习资源，持续更新 |
-| [更新日志](/appendix/changelog) | 教程的重要更新和改进记录 |
 
 ---
 
@@ -29,4 +28,4 @@
 
 ---
 
-[← 返回课程目录](/curriculum)
+[← 返回课程目录](/preface)

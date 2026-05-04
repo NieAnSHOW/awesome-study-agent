@@ -216,18 +216,8 @@
 ### 如果你想商业化
 1. 学习《精益创业》
 2. 浏览 Product Hunt 发现机会
-3. 阅读本教程落地型路径
+3. 用本教程快速搭建认知框架
 4. 快速做 MVP 验证
-
----
-
-## 📅 每周资源推荐
-
-### 本周推荐
-- **课程**：[Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/)
-- **工具**：[Cursor](https://cursor.sh) - AI 原生编辑器
-- **项目**：[ChatGPT-Next-Web](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web)
-- **文章**：[Anthropic's Prompt Library](https://docs.anthropic.com/claude/prompt-library)
 
 ---
 

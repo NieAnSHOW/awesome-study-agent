@@ -64,7 +64,6 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '序言', link: '/preface' },
-      { text: '课程目录', link: '/curriculum' },
       {
         text: '基础知识',
         items: [
@@ -392,7 +391,6 @@ export default defineConfig({
               { text: '提示词模板库', link: 'prompts-library' },
               { text: '常见问题', link: 'faq' },
               { text: '资源推荐', link: 'resources' },
-              { text: '更新日志', link: 'changelog' },
             ]
           }
         ]
@@ -401,18 +399,18 @@ export default defineConfig({
 
     // 社交链接
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/your-username/awesome-study-agent' }
+      { icon: 'github', link: 'https://github.com/NieAnSHOW/awesome-study-agent' }
     ],
 
     // 页脚
     footer: {
-      message: '基于 Apache 2.0 许可发布',
+      message: '基于 MIT LICENSE 许可发布',
       copyright: 'Copyright © 2026-present Awesome Study Agent'
     },
 
     // 编辑链接
     editLink: {
-      pattern: 'https://github.com/your-username/awesome-study-agent/edit/main/config/:path',
+      pattern: 'https://github.com/NieAnSHOW/awesome-study-agent',
       text: '在 GitHub 上编辑此页'
     },
 

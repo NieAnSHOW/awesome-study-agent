@@ -796,7 +796,7 @@ response = generator_agent.generate(
 
 1. [尝试构建自己的 Agent](/practical/01-quick-start)
 2. [探索实战项目](/practical/02-projects)
-3. [返回课程目录](/curriculum)
+3. [返回课程目录](/preface)
 
 ---
 

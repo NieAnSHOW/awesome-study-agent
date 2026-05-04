@@ -97,7 +97,7 @@
 
 ---
 
-[← 返回课程目录](/curriculum) | [继续学习:提示词基础 →](/basics/03-prompt-engineering/01-prompt-basics)
+[← 返回课程目录](/preface) | [继续学习:提示词基础 →](/basics/03-prompt-engineering/01-prompt-basics)
 
 ---
 

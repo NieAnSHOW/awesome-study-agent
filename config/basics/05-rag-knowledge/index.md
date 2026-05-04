@@ -96,4 +96,4 @@ RAG 涉及多个技术点,建议采用"螺旋式"学习法:
 
 ---
 
-[← 返回课程目录](/curriculum) | [继续学习:什么是 RAG? →](/basics/05-rag-knowledge/01-what-is-rag)
+[← 返回课程目录](/preface) | [继续学习:什么是 RAG? →](/basics/05-rag-knowledge/01-what-is-rag)

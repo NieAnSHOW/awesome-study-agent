@@ -842,7 +842,7 @@ def evaluate_sentiment_prompt(prompt, test_cases):
 
 ---
 
-[← 返回模块三](/basics/03-prompt-engineering) | [返回课程目录](/curriculum)
+[← 返回模块三](/basics/03-prompt-engineering) | [返回课程目录](/preface)
 
 ---
 

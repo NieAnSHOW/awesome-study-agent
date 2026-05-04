@@ -4,96 +4,79 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 项目概述
 
-Awesome-Study-Agent 是一个基于 VitePress 构建的 AI Agent 系统性学习文档网站。项目旨在为零基础学习者提供轻松掌握 AI Agent 的学习资源。
+Awesome-Study-Agent 是一个面向零基础学习者的 AI Agent 系统性知识库。**15 个基础模块 + 3 个深度指南 + 6 个附录**，共 154 篇 Markdown 文档。所有内容由 DeepSeek V4 辅助生成。
 
 ## 开发命令
 
-### 启动开发服务器
 ```bash
-pnpm run docs:dev
+pnpm run docs:dev       # 启动本地开发服务器 (http://localhost:5173)
+pnpm run docs:build     # 构建生产版本，输出到 config/.vitepress/dist
+pnpm run docs:preview   # 预览构建后的静态网站
 ```
-启动本地开发服务器,通常在 `http://localhost:5173` 访问。
 
-### 构建生产版本
-```bash
-pnpm run docs:build
-```
-构建静态网站,输出到 `config/.vitepress/dist` 目录。
-
-### 预览生产构建
-```bash
-pnpm run docs:preview
-```
-预览构建后的静态网站。
+依赖：Node.js + pnpm 10.6.5。无测试流程。
 
 ## 项目架构
 
-### 核心目录结构
-
 ```
-awesome-study-agent/
-├── config/                    # VitePress 文档根目录
-│   ├── .vitepress/           # VitePress 配置和缓存
-│   │   ├── config.mts        # VitePress 主配置文件
-│   │   └── cache/            # VitePress 构建缓存
-│   ├── index.md              # 网站首页
-│   ├── markdown-examples.md  # Markdown 示例页面
-│   └── api-examples.md       # API 示例页面
-├── node_modules/             # 依赖包
-├── package.json              # 项目配置
-└── pnpm-lock.yaml           # pnpm 锁文件
+config/                     # 文档根目录（VitePress 内容源）
+├── .vitepress/
+│   ├── config.mts          # VitePress 主配置 (460 行)，含 nav/sidebar/teek 主题配置
+│   └── theme/              # 自定义主题 (index.ts + root.css)
+├── index.md                # 网站首页
+├── preface.md              # 课程大纲/序言
+├── basics/                 # 15 个基础模块 (15×5-8 篇文章)
+│   ├── 01-ai-overview/     # AI 概述与 Agent 概念
+│   ├── 02-llm-fundamentals/
+│   ├── 03-prompt-engineering/
+│   ├── 04-agent-fundamentals/
+│   ├── 05-rag-knowledge/
+│   ├── 06-ai-coding-tools/
+│   ├── 07-agent-ecosystem/
+│   ├── 08-model-training/
+│   ├── 09-agent-skills/
+│   ├── 10-openclaw/
+│   ├── 11-workbuddy/
+│   ├── 12-ai-video-generation/
+│   ├── 13-multimodal-ai/
+│   ├── 14-ai-image-generation/
+│   └── 15-markdown-reading-tools/
+├── deep-dive/              # 3 个深度指南 (各 14 篇文章)
+│   ├── agent-skills/       # Agent Skills 系统
+│   ├── context-management/ # 大模型上下文管理
+│   └── openclaw/           # OpenClaw 深度指南
+└── appendix/               # 6 个附录页面
+    ├── glossary.md         # 术语表
+    ├── tools-list.md       # 工具清单
+    ├── prompts-library.md  # 提示词模板库
+    ├── faq.md              # FAQ
+    ├── resources.md        # 资源推荐
+    └── changelog.md        # 更新日志
+
+scripts/
+└── humanize_docs.py        # 文档去 AI 味处理脚本
+
+devlogs/                    # 项目开发日志
+docs/superpowers/           # 开发计划与设计文档
 ```
 
-### VitePress 配置 (`config/.vitepress/config.mts`)
+## 技术栈
 
-VitePress 配置文件使用 TypeScript,导出站点和主题配置:
+- **构建**: VitePress ^1.6.4
+- **主题**: vitepress-theme-teek ^1.5.4 — 在 config.mts 中通过 `defineTeekConfig` 配置，提供深色切换动画、代码块折叠、版权信息等增强功能
+- **包管理**: pnpm 10.6.5
 
-- `title`: 网站标题
-- `description`: 网站描述
-- `themeConfig.nav`: 顶部导航栏配置
-- `themeConfig.sidebar`: 侧边栏配置
-- `themeConfig.socialLinks`: 社交媒体链接
+## 内容约定
 
-### 内容组织
+- 每个基础模块目录包含 `index.md` + 若干 Markdown 文档
+- 每篇文章最后带「检验标准」小节，用于自测是否掌握
+- 新增内容需要在 `config/.vitepress/config.mts` 中同步更新 nav（导航栏）和 sidebar（侧边栏）配置
+- 添加模块时需同时在 README.md 的内容架构表格中更新
 
-所有文档内容存储在 `config/` 目录下,使用 Markdown 格式:
+## 辅助脚本
 
-- **首页** (`index.md`): 使用 VitePress 的 home 布局,包含 hero 区域和特性展示
-- **Markdown 文件**: 支持完整的 VitePress Markdown 扩展,包括:
-  - 语法高亮 (使用 Shiki)
-  - 自定义容器 (info, tip, warning, danger, details)
-  - frontmatter 配置
-  - Vue 组件集成
+```bash
+python3 scripts/humanize_docs.py  # 对指定目录的 Markdown 文件执行去 AI 味处理
+```
 
-### 包管理
-
-项目使用 **pnpm** 作为包管理器 (版本 10.6.5),在 `package.json` 中已指定。
-
-主要依赖:
-- `vitepress`: ^1.6.4 - 静态网站生成器
-
-## 添加新内容
-
-1. 在 `config/` 目录下创建新的 `.md` 文件
-2. 在 `config/.vitepress/config.mts` 中更新导航和侧边栏配置
-3. 首页或其他页面可以通过相对路径链接到新页面
-4. VitePress 支持热重载,保存后自动刷新浏览器
-
-## 自定义和扩展
-
-### 添加主题自定义
-在 `config/.vitepress/theme/` 目录下创建自定义主题文件(如果需要):
-
-- `index.ts`: 主题入口
-- `components/`: 自定义 Vue 组件
-- `styles/`: 自定义样式
-
-### VitePress 特性
-- 支持在 Markdown 中嵌入 Vue 组件
-- 使用 `useData()` API 访问页面、主题和站点数据
-- 内置搜索功能
-- 响应式设计
-
-## 许可证
-
-项目使用 Apache License 2.0 许可证。
+脚本目前硬编码了处理路径和文件列表，添加新目标需修改 `main()` 函数中的路径配置。

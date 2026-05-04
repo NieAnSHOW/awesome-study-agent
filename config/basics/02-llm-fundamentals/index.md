@@ -88,7 +88,7 @@
 
 ---
 
-[← 返回课程目录](/curriculum) | [继续学习:什么是大语言模型? →](/basics/02-llm-fundamentals/01-what-is-llm)
+[← 返回课程目录](/preface) | [继续学习:什么是大语言模型? →](/basics/02-llm-fundamentals/01-what-is-llm)
 
 ---
 

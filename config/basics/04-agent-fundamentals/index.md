@@ -78,4 +78,4 @@
 
 ---
 
-[← 返回课程目录](/curriculum) | [继续学习：Agent 架构 →](/basics/04-agent-fundamentals/01-agent-architecture)
+[← 返回课程目录](/preface) | [继续学习：Agent 架构 →](/basics/04-agent-fundamentals/01-agent-architecture)

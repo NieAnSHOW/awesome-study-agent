@@ -98,7 +98,7 @@
 
 ---
 
-[← 返回课程目录](/curriculum) | [继续学习:微调基础 →](/basics/08-model-training/01-fine-tuning-basics)
+[← 返回课程目录](/preface) | [继续学习:微调基础 →](/basics/08-model-training/01-fine-tuning-basics)
 
 ---
 

@@ -80,7 +80,7 @@ AI Agent 的浪潮才刚刚开始,现在正是学习的好时机。
 
 ---
 
-[← 返回课程目录](/curriculum) | [继续学习:什么是 AI? →](/basics/01-ai-overview/01-what-is-ai)
+[← 返回课程目录](/preface) | [继续学习:什么是 AI? →](/basics/01-ai-overview/01-what-is-ai)
 
 ---
 

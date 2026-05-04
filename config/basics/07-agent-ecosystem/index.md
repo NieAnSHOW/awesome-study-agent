@@ -103,7 +103,7 @@
 
 ---
 
-[← 返回课程目录](/curriculum) | [继续学习：Agent 框架 →](/basics/07-agent-ecosystem/01-agent-frameworks)
+[← 返回课程目录](/preface) | [继续学习：Agent 框架 →](/basics/07-agent-ecosystem/01-agent-frameworks)
 
 ---
 

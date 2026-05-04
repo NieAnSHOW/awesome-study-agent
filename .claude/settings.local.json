@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Skill(ui-ux-pro-max)",
+      "Bash(python3:*)",
+      "Bash(pnpm run docs:dev:*)",
+      "mcp__exa__get_code_context_exa",
+      "Skill(humanizer-zh)",
+      "mcp__web-search-prime__webSearchPrime",
+      "Bash(ls:*)",
+      "Bash(wc:*)",
+      "Bash(python:*)",
+      "Bash(head:*)",
+      "Bash(done)",
+      "Read(//Users/niean/.claude/skills/pptx/**)",
+      "Bash(npm install:*)",
+      "Bash(pnpm run docs:build)",
+      "Bash(cat:*)",
+      "mcp__web_reader__webReader",
+      "mcp__metaso__metaso_web_search"
+    ],
+    "defaultMode":"bypassPermissions",
+    "additionalDirectories": [
+      "/Users/niean/.claude/skills/pptx/scripts"
+    ]
+  },
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  }
+}

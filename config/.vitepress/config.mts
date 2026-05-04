@@ -65,23 +65,36 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '序言', link: '/preface' },
       {
-        text: '基础知识',
+        text: 'AI 基础知识',
         items: [
-          { text: 'AI 概述', link: '/basics/01-ai-overview/' },
-          { text: 'LLM 基础', link: '/basics/02-llm-fundamentals/' },
-          { text: '提示词工程', link: '/basics/03-prompt-engineering/' },
-          { text: 'Agent 基础', link: '/basics/04-agent-fundamentals/' },
-          { text: 'RAG 技术', link: '/basics/05-rag-knowledge/' },
-          { text: 'AI 编程工具', link: '/basics/06-ai-coding-tools/' },
-          { text: 'Agent 生态', link: '/basics/07-agent-ecosystem/' },
-          { text: '模型训练', link: '/basics/08-model-training/' },
-          { text: 'Agent Skills', link: '/basics/09-agent-skills/' },
-          { text: 'OpenClaw', link: '/basics/10-openclaw/' },
-          { text: 'WorkBuddy', link: '/basics/11-workbuddy/' },
-          { text: 'AI 视频生成', link: '/basics/12-ai-video-generation/' },
-          { text: '多模态 AI 技术', link: '/basics/13-multimodal-ai/' },
-          { text: 'AI 图像生成', link: '/basics/14-ai-image-generation/' },
-          { text: 'Markdown 阅读工具', link: '/basics/15-markdown-reading-tools/' },
+          { text: 'AI 概述', link: '/ai-basics/01-ai-overview/' },
+          { text: 'LLM 基础', link: '/ai-basics/02-llm-fundamentals/' },
+          { text: '提示词工程', link: '/ai-basics/03-prompt-engineering/' },
+          { text: 'Agent 基础', link: '/ai-basics/04-agent-fundamentals/' },
+          { text: 'RAG 技术', link: '/ai-basics/05-rag-knowledge/' },
+          { text: '模型训练', link: '/ai-basics/08-model-training/' },
+          { text: '多模态 AI 技术', link: '/ai-basics/13-multimodal-ai/' },
+        ]
+      },
+      {
+        text: 'Agent 生态',
+        items: [
+          { text: 'AI 编程工具', link: '/agent-ecosystem/06-ai-coding-tools/' },
+          { text: 'Agent 生态', link: '/agent-ecosystem/07-agent-ecosystem/' },
+          { text: 'Hermes Agent', link: '/agent-ecosystem/07-agent-ecosystem/07-hermes-agent-overview' },
+          { text: 'Claude 设计', link: '/agent-ecosystem/07-agent-ecosystem/09-claude-design' },
+          { text: 'Pencil 设计', link: '/agent-ecosystem/07-agent-ecosystem/10-pencil-intro' },
+          { text: 'Agent Skills', link: '/agent-ecosystem/09-agent-skills/' },
+          { text: 'OpenClaw', link: '/agent-ecosystem/10-openclaw/' },
+          { text: 'WorkBuddy', link: '/agent-ecosystem/11-workbuddy/' },
+          { text: 'AI 视频生成', link: '/agent-ecosystem/12-ai-video-generation/' },
+          { text: 'AI 图像生成', link: '/agent-ecosystem/14-ai-image-generation/' },
+        ]
+      },
+      {
+        text: '工具推荐',
+        items: [
+          { text: 'Markdown 阅读工具', link: '/tools-recommendation/15-markdown-reading-tools/' },
         ]
       },
       {
@@ -100,22 +113,21 @@ export default defineConfig({
           { text: '提示词库', link: '/appendix/prompts-library' },
           { text: 'FAQ', link: '/appendix/faq' },
           { text: '资源推荐', link: '/appendix/resources' },
-          { text: '更新日志', link: '/appendix/changelog' },
         ]
       },
     ],
 
     // 侧边栏配置
     sidebar: {
-      '/basics/': {
-        base: '/basics/',
+      '/ai-basics/': {
+        base: '/ai-basics/',
         items: [
           {
-            text: '基础型路径',
+            text: 'AI 基础知识',
             items: [
               {
-                text: '模块一：AI 概述与 Agent 概念',
-                collapsed: false,
+                text: 'AI 概述与 Agent 概念',
+                collapsed: true,
                 items: [
                   { text: '模块介绍', link: '01-ai-overview/' },
                   { text: '什么是 AI？', link: '01-ai-overview/01-what-is-ai' },
@@ -125,7 +137,7 @@ export default defineConfig({
                 ]
               },
               {
-                text: '模块二：大语言模型基础',
+                text: '大语言模型基础',
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '02-llm-fundamentals/' },
@@ -137,7 +149,7 @@ export default defineConfig({
                 ]
               },
               {
-                text: '模块三：提示词工程',
+                text: '提示词工程',
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '03-prompt-engineering/' },
@@ -149,7 +161,7 @@ export default defineConfig({
                 ]
               },
               {
-                text: '模块四：Agent 基础与架构',
+                text: 'Agent 基础与架构',
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '04-agent-fundamentals/' },
@@ -161,7 +173,7 @@ export default defineConfig({
                 ]
               },
               {
-                text: '模块五：RAG 与知识增强',
+                text: 'RAG 与知识增强',
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '05-rag-knowledge/' },
@@ -174,33 +186,7 @@ export default defineConfig({
                 ]
               },
               {
-                text: '模块六：AI 编程工具',
-                collapsed: true,
-                items: [
-                  { text: '模块介绍', link: '06-ai-coding-tools/' },
-                  { text: 'Cursor 编辑器', link: '06-ai-coding-tools/01-cursor' },
-                  { text: 'Claude Code', link: '06-ai-coding-tools/02-claude-code' },
-                  { text: '其他 AI 编程工具', link: '06-ai-coding-tools/03-other-tools' },
-                  { text: '最佳实践', link: '06-ai-coding-tools/04-best-practices' },
-                  { text: '开发环境搭建', link: '06-ai-coding-tools/05-environment-setup' },
-                  { text: 'CC Switch 配置管理', link: '06-ai-coding-tools/06-cc-switch' },
-                ]
-              },
-              {
-                text: '模块七：Agent 生态与协议',
-                collapsed: true,
-                items: [
-                  { text: '模块介绍', link: '07-agent-ecosystem/' },
-                  { text: 'Agent 框架', link: '07-agent-ecosystem/01-agent-frameworks' },
-                  { text: 'Agent 平台', link: '07-agent-ecosystem/02-agent-platforms' },
-                  { text: 'MCP 协议', link: '07-agent-ecosystem/03-mcp-protocol' },
-                  { text: 'Skills 系统', link: '07-agent-ecosystem/04-skills-system' },
-                  { text: 'Function Calling', link: '07-agent-ecosystem/05-function-calling' },
-                  { text: 'Agent 编排', link: '07-agent-ecosystem/06-orchestration' },
-                ]
-              },
-              {
-                text: '模块八：模型训练与优化',
+                text: '模型训练与优化',
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '08-model-training/' },
@@ -213,7 +199,79 @@ export default defineConfig({
                 ]
               },
               {
-                text: '模块九：Agent Skills 系统',
+                text: '多模态 AI 技术',
+                collapsed: true,
+                items: [
+                  { text: '模块介绍', link: '13-multimodal-ai/' },
+                  { text: '核心概念', link: '13-multimodal-ai/01-concepts' },
+                  { text: '模型架构', link: '13-multimodal-ai/02-architectures' },
+                  { text: '跨模态对齐', link: '13-multimodal-ai/03-cross-modal-alignment' },
+                  { text: '多模态 Transformer', link: '13-multimodal-ai/04-multimodal-transformers' },
+                  { text: '应用场景', link: '13-multimodal-ai/05-applications' },
+                  { text: 'Agent 集成实践', link: '13-multimodal-ai/06-agent-integration' },
+                ]
+              },
+            ]
+          }
+        ]
+      },
+      '/agent-ecosystem/': {
+        base: '/agent-ecosystem/',
+        items: [
+          {
+            text: 'Agent 生态',
+            items: [
+              {
+                text: 'AI 编程工具',
+                collapsed: true,
+                items: [
+                  { text: '模块介绍', link: '06-ai-coding-tools/' },
+                  { text: 'Cursor 编辑器', link: '06-ai-coding-tools/01-cursor' },
+                  { text: 'Claude Code', link: '06-ai-coding-tools/02-claude-code' },
+                  { text: '其他 AI 编程工具', link: '06-ai-coding-tools/03-other-tools' },
+                  { text: '最佳实践', link: '06-ai-coding-tools/04-best-practices' },
+                  { text: '开发环境搭建', link: '06-ai-coding-tools/05-environment-setup' },
+                  { text: 'CC Switch 配置管理', link: '06-ai-coding-tools/06-cc-switch' },
+                ]
+              },
+              {
+                text: 'Agent 生态与协议',
+                collapsed: true,
+                items: [
+                  { text: '模块介绍', link: '07-agent-ecosystem/' },
+                  { text: 'Agent 框架', link: '07-agent-ecosystem/01-agent-frameworks' },
+                  { text: 'Agent 平台', link: '07-agent-ecosystem/02-agent-platforms' },
+                  { text: 'MCP 协议', link: '07-agent-ecosystem/03-mcp-protocol' },
+                  { text: 'Skills 系统', link: '07-agent-ecosystem/04-skills-system' },
+                  { text: 'Function Calling', link: '07-agent-ecosystem/05-function-calling' },
+                  { text: 'Agent 编排', link: '07-agent-ecosystem/06-orchestration' },
+                ]
+              },
+              {
+                text: 'Hermes Agent',
+                collapsed: true,
+                items: [
+                  { text: 'Hermes Agent 概述', link: '07-agent-ecosystem/07-hermes-agent-overview' },
+                  { text: 'Hermes Agent 实战部署', link: '07-agent-ecosystem/08-hermes-agent-deploy' },
+                ]
+              },
+              {
+                text: 'Claude 设计能力',
+                collapsed: true,
+                items: [
+                  { text: 'Claude 设计能力', link: '07-agent-ecosystem/09-claude-design' },
+                ]
+              },
+              {
+                text: 'Pencil 设计工具',
+                collapsed: true,
+                items: [
+                  { text: 'Pencil 原型设计工具入门', link: '07-agent-ecosystem/10-pencil-intro' },
+                  { text: 'Pencil MCP 集成', link: '07-agent-ecosystem/11-pencil-mcp' },
+                ]
+              },
+              {
+                text: 'Agent Skills 系统',
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '09-agent-skills/' },
@@ -225,7 +283,7 @@ export default defineConfig({
                 ]
               },
               {
-                text: '模块十：OpenClaw 开源 AI 助手',
+                text: 'OpenClaw 开源 AI 助手',
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '10-openclaw/' },
@@ -237,7 +295,7 @@ export default defineConfig({
                 ]
               },
               {
-                text: '模块十一：WorkBuddy 数字员工实践',
+                text: 'WorkBuddy 数字员工实践',
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '11-workbuddy/' },
@@ -250,7 +308,7 @@ export default defineConfig({
                 ]
               },
               {
-                text: '模块十二：AI 视频生成',
+                text: 'AI 视频生成',
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '12-ai-video-generation/' },
@@ -263,20 +321,7 @@ export default defineConfig({
                 ]
               },
               {
-                text: '模块十三：多模态 AI 技术',
-                collapsed: true,
-                items: [
-                  { text: '模块介绍', link: '13-multimodal-ai/' },
-                  { text: '核心概念', link: '13-multimodal-ai/01-concepts' },
-                  { text: '模型架构', link: '13-multimodal-ai/02-architectures' },
-                  { text: '跨模态对齐', link: '13-multimodal-ai/03-cross-modal-alignment' },
-                  { text: '多模态 Transformer', link: '13-multimodal-ai/04-multimodal-transformers' },
-                  { text: '应用场景', link: '13-multimodal-ai/05-applications' },
-                  { text: 'Agent 集成实践', link: '13-multimodal-ai/06-agent-integration' },
-                ]
-              },
-              {
-                text: '模块十四：AI 图像生成',
+                text: 'AI 图像生成',
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '14-ai-image-generation/' },
@@ -286,19 +331,6 @@ export default defineConfig({
                   { text: '中国 AI 绘画平台', link: '14-ai-image-generation/04-china-platforms' },
                   { text: '提示词工程与创作', link: '14-ai-image-generation/05-prompt-and-creation' },
                   { text: '商业应用与案例', link: '14-ai-image-generation/06-business-cases' },
-                ]
-              },
-              {
-                text: '模块十五：Markdown 阅读工具',
-                collapsed: true,
-                items: [
-                  { text: '模块介绍', link: '15-markdown-reading-tools/' },
-                  { text: 'Obsidian', link: '15-markdown-reading-tools/01-obsidian' },
-                  { text: 'Logseq', link: '15-markdown-reading-tools/02-logseq' },
-                  { text: 'MarkText', link: '15-markdown-reading-tools/03-marktext' },
-                  { text: 'Joplin', link: '15-markdown-reading-tools/04-joplin' },
-                  { text: 'Zettlr', link: '15-markdown-reading-tools/05-zettlr' },
-                  { text: '横向对比与选型', link: '15-markdown-reading-tools/06-comparison' },
                 ]
               },
             ]
@@ -391,6 +423,30 @@ export default defineConfig({
               { text: '提示词模板库', link: 'prompts-library' },
               { text: '常见问题', link: 'faq' },
               { text: '资源推荐', link: 'resources' },
+            ]
+          }
+        ]
+      },
+      '/tools-recommendation/': {
+        base: '/tools-recommendation/',
+        items: [
+          {
+            text: '工具推荐',
+            items: [
+              { text: '概览', link: '/' },
+              {
+                text: 'Markdown 阅读工具',
+                collapsed: false,
+                items: [
+                  { text: '模块介绍', link: '15-markdown-reading-tools/' },
+                  { text: 'Obsidian', link: '15-markdown-reading-tools/01-obsidian' },
+                  { text: 'Logseq', link: '15-markdown-reading-tools/02-logseq' },
+                  { text: 'MarkText', link: '15-markdown-reading-tools/03-marktext' },
+                  { text: 'Joplin', link: '15-markdown-reading-tools/04-joplin' },
+                  { text: 'Zettlr', link: '15-markdown-reading-tools/05-zettlr' },
+                  { text: '横向对比与选型', link: '15-markdown-reading-tools/06-comparison' },
+                ]
+              },
             ]
           }
         ]

@@ -81,7 +81,7 @@
 - **版本控制**：Git
 - **API 账号**：OpenAI、Anthropic 等（有免费额度）
 
-具体安装教程请参考：[开发环境搭建](/basics/06-ai-coding-tools/05-environment-setup)
+具体安装教程请参考：[开发环境搭建](/agent-ecosystem/06-ai-coding-tools/05-environment-setup)
 
 ---
 
@@ -132,7 +132,7 @@
 - 一般项目几美元足够
 - 可以设置费用上限
 
-详细指南请参考：[模型部署](/basics/08-model-training/05-deployment)
+详细指南请参考：[模型部署](/ai-basics/08-model-training/05-deployment)
 
 ---
 

@@ -21,120 +21,120 @@ sidebar: false
 > 目标：零基础到能干活。预计3-6个月。
 > 适合：所有想系统性理解AI Agent的人。
 
-### 模块一：AI 概述与 Agent 概念
-**路径**：`basics/01-ai-overview/`
+### AI 概述与 Agent 概念
+**路径**：`ai-basics/01-ai-overview/`
 **4篇文章**：什么是AI → AI发展简史 → 什么是AI Agent → 为什么Agent是未来
 
 从最根上开始。不讲数学，不讲算法，就讲清楚三件事：AI是什么、Agent是什么、为什么这两个东西结合在一起是大事。
 
 **检验标准**：能用大白话跟朋友解释清楚AI Agent是啥。过了这关再往下走。
 
-### 模块二：大语言模型基础
-**路径**：`basics/02-llm-fundamentals/`
+### 大语言模型基础
+**路径**：`ai-basics/02-llm-fundamentals/`
 **5篇文章**：什么是LLM → LLM如何工作 → 主流模型介绍 → 核心能力 → 挑战
 
 LLM是Agent的"大脑"。这个模块不让你搞懂Transformer的内部数学——说实话大部分不需要懂——但让你明白Token是什么、Temperature调了有什么用、为什么模型会"幻觉"。
 
 **检验标准**：能解释Token、Temperature、上下文窗口这三个概念。
 
-### 模块三：提示词工程
-**路径**：`basics/03-prompt-engineering/`
+### 提示词工程
+**路径**：`ai-basics/03-prompt-engineering/`
 **5篇文章**：提示词基础 → 提示词模式 → 进阶技巧 → 不同任务的设计 → 工具与资源
 
 我花了很多时间研究这个。提示词不是"好好说话"，是有模式有结构的。思维链、ReAct、角色扮演——这些模式学会了，跟AI沟通效率翻倍。
 
 **检验标准**：能设计稳定输出指定格式的提示词。
 
-### 模块四：Agent 基础与架构
-**路径**：`basics/04-agent-fundamentals/`
+### Agent 基础与架构
+**路径**：`ai-basics/04-agent-fundamentals/`
 **5篇文章**：Agent架构 → Agent类型 → 记忆系统 → 工具使用 → 规划与推理
 
 Agent的核心组件：感知、记忆、工具、规划、行动。这个模块讲清楚这些组件怎么拼在一起工作。
 
 **检验标准**：能画出一个Agent的架构图，说出每部分干啥的。
 
-### 模块五：RAG 与知识增强
-**路径**：`basics/05-rag-knowledge/`
+### RAG 与知识增强
+**路径**：`ai-basics/05-rag-knowledge/`
 **6篇文章**：什么是RAG → RAG流程 → 向量化 → 向量数据库 → 进阶RAG → RAG实践
 
 RAG是目前最实用的Agent增强技术——没有之一。给Agent喂外部知识，让它不只靠训练数据活着。文档分块、向量检索、混合搜索，这些都是搭RAG系统的必修课。
 
 **检验标准**：能搭一个基于文档的问答系统。
 
-### 模块六：AI 编程工具
-**路径**：`basics/06-ai-coding-tools/`
+### AI 编程工具
+**路径**：`agent-ecosystem/06-ai-coding-tools/`
 **6篇文章**：Cursor → Claude Code → 其他工具 → 最佳实践 → 环境搭建 → CC Switch配置
 
 这块我熟。Cursor和Claude Code是目前最能打的两个AI编程工具。我的经验：Cursor更适合做产品原型，Claude Code更适合做复杂工程。CC Switch是我自己也在用的配置管理工具。
 
 **检验标准**：能用AI编程工具从零搭一个Web应用。
 
-### 模块七：Agent 生态与协议
-**路径**：`basics/07-agent-ecosystem/`
+### Agent 生态与协议
+**路径**：`agent-ecosystem/07-agent-ecosystem/`
 **6篇文章**：Agent框架 → Agent平台 → MCP协议 → Skills系统 → Function Calling → Agent编排
 
 MCP（Model Context Protocol）是Agent生态里最重要的协议，没有之一。LangChain/LangGraph是框架里生态最大的。这个模块帮你搞清楚整个Agent世界的地图。
 
 **检验标准**：能搭一个MCP Server，能用LangGraph搭一个多Agent流程。
 
-### 模块八：模型训练与优化
-**路径**：`basics/08-model-training/`
+### 模型训练与优化
+**路径**：`ai-basics/08-model-training/`
 **6篇文章**：微调基础 → 准备 → 实践 → 优化 → 部署 → 评估
 
 对大部分人来说，这个模块更多是"了解"而不是"上手"。但你得知道微调和RAG的区别、什么时候该微调什么时候不该、LoRA和QLoRA是什么。
 
 **检验标准**：能判断一个场景该用RAG还是微调。
 
-### 模块九：Agent Skills 系统
-**路径**：`basics/09-agent-skills/`
+### Agent Skills 系统
+**路径**：`agent-ecosystem/09-agent-skills/`
 **5篇文章**：什么是Skills → 技术架构 → 主流框架实现 → 设计与实战 → 生态与安全
 
 Skills是给Agent装"技能包"的机制。Claude Code的Skills系统、OpenClaw的Skills系统、LangChain的工具链——本质都是给Agent划定行为边界和能力范围。
 
 **检验标准**：能写一个基础的Skill文件并在Claude Code或OpenClaw中使用。
 
-### 模块十：OpenClaw 开源 AI 助手
-**路径**：`basics/10-openclaw/`
+### OpenClaw 开源 AI 助手
+**路径**：`agent-ecosystem/10-openclaw/`
 **5篇文章**：概览 → 架构 → 上手 → Skills与记忆 → 社区与展望
 
 OpenClaw是一个开源AI Agent框架。它的Skill系统、四层记忆体系、Gateway架构很值得学习。
 
 **检验标准**：能部署OpenClaw并跑通一个自定义Skill。
 
-### 模块十一：WorkBuddy 数字员工实践
-**路径**：`basics/11-workbuddy/`
+### WorkBuddy 数字员工实践
+**路径**：`agent-ecosystem/11-workbuddy/`
 **6篇文章**：概览 → 通用办公 → 市场销售 → 技术研发 → 创意设计 → 用前必读
 
 WorkBuddy是一个工作场景的Agent实践集。不做理论，全是怎么用AI干具体活——写周报、做竞品分析、调代码bug、画设计图。
 
 **检验标准**：能用WorkBuddy完成一个日常工作流程的AI化改造。
 
-### 模块十二：AI 视频生成
-**路径**：`basics/12-ai-video-generation/`
+### AI 视频生成
+**路径**：`agent-ecosystem/12-ai-video-generation/`
 **6篇文章**：概述 → 主流平台 → 核心技术 → 实战指南 → 创作工作流 → 商业应用
 
 Sora、Runway、可灵、Pika——AI视频生成的爆发速度比我想象的快。这个模块不教你做导演，教你理解这些工具能干什么、怎么用在工作流里。
 
 **检验标准**：能用至少一个AI视频工具生成30秒以上的可用视频。
 
-### 模块十三：多模态 AI 技术
-**路径**：`basics/13-multimodal-ai/`
+### 多模态 AI 技术
+**路径**：`ai-basics/13-multimodal-ai/`
 **6篇文章**：核心概念 → 模型架构 → 跨模态对齐 → 多模态Transformer → 应用场景 → Agent集成
 
 能看懂文字、图片、音频、视频的模型——多模态是Agent从"聊天机器人"变成"能理解世界的助手"的关键一步。
 
 **检验标准**：能说清楚多模态模型怎么对齐不同模态的信息，以及怎么集成到Agent里。
 
-### 模块十四：AI 图像生成
-**路径**：`basics/14-ai-image-generation/`
+### AI 图像生成
+**路径**：`agent-ecosystem/14-ai-image-generation/`
 **6篇文章**：概述 → 主流平台 → 开源生态 → 国内平台 → 提示词工程 → 商业应用
 
 Midjourney、Stable Diffusion、DALL·E、文心一格、通义万相——AI做图已经被广泛接受了。我自己的经验：工具不重要，提示词的工程方法重要。
 
 **检验标准**：能稳定生成符合需求的图像，理解不同平台的能力边界。
 
-### 模块十五：Markdown 阅读工具
-**路径**：`basics/15-markdown-reading-tools/`
+### Markdown 阅读工具
+**路径**：`tools-recommendation/15-markdown-reading-tools/`
 **6篇文章**：Obsidian → Logseq → MarkText → Joplin → Zettlr → 横向对比
 
 这是AI学习者的"基础知识管理器"。我的选择：Obsidian。原因？插件生态、纯本地、Markdown原生。但工具是手段不是目的。
@@ -231,4 +231,4 @@ Claude Code 51万行代码里我最吃惊的一个发现：它没有用向量数
 
 > 先读起来，再动手，再回头读。循环三次，你就不是新手了。
 
-[返回首页](/) | [开始学习](basics/01-ai-overview/)
+[返回首页](/) | [开始学习](ai-basics/01-ai-overview/)

@@ -92,8 +92,10 @@
 - [ ] 理解 Pencil 原型工具及 MCP 集成的工作流
 - [ ] 理解 DeerFlow 的 Super Agent Harness 定位和编排模式
 - [ ] 能独立完成 DeerFlow 的 Docker 部署和基本使用
-- [ ] 理解 pi-coding-agent 的四层扩展体系和 SDK 集成方式
-- [ ] 掌握 A2UI 声明式 UI 协议的核心概念和实战用法
+- [ ] 理解 pi-coding-agent 的极简设计哲学和核心架构
+- [ ] 能安装使用 pi-coding-agent 并编写自定义扩展
+- [ ] 理解 A2UI 声明式 UI 协议的设计动机和架构
+- [ ] 能使用 A2UI 组件并与 Agent 进行集成
 
 ## 扩展阅读
 

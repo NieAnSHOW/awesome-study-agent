@@ -86,6 +86,8 @@ export default withMermaid(defineConfig({
           { text: 'Claude 设计', link: '/agent-ecosystem/07-agent-ecosystem/09-claude-design' },
           { text: 'Pencil 设计', link: '/agent-ecosystem/07-agent-ecosystem/10-pencil-intro' },
           { text: 'DeerFlow', link: '/agent-ecosystem/07-agent-ecosystem/12-deerflow-overview' },
+          { text: 'pi-coding-agent', link: '/agent-ecosystem/07-agent-ecosystem/14-pi-coding-agent-overview' },
+          { text: 'A2UI', link: '/agent-ecosystem/07-agent-ecosystem/16-a2ui-overview' },
           { text: 'Agent Skills', link: '/agent-ecosystem/09-agent-skills/' },
           { text: 'OpenClaw', link: '/agent-ecosystem/10-openclaw/' },
           { text: 'WorkBuddy', link: '/agent-ecosystem/11-workbuddy/' },

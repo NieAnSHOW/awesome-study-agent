@@ -281,6 +281,22 @@ export default withMermaid(defineConfig({
                 ]
               },
               {
+                text: 'pi-coding-agent',
+                collapsed: true,
+                items: [
+                  { text: 'pi-coding-agent 概述', link: '07-agent-ecosystem/14-pi-coding-agent-overview' },
+                  { text: 'pi-coding-agent 实战', link: '07-agent-ecosystem/15-pi-coding-agent-deploy' },
+                ]
+              },
+              {
+                text: 'A2UI',
+                collapsed: true,
+                items: [
+                  { text: 'A2UI 概述', link: '07-agent-ecosystem/16-a2ui-overview' },
+                  { text: 'A2UI 实战', link: '07-agent-ecosystem/17-a2ui-deploy' },
+                ]
+              },
+              {
                 text: 'Agent Skills 系统',
                 collapsed: true,
                 items: [

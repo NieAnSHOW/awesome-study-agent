@@ -91,6 +91,37 @@
 
 ---
 
+### DeepSeek V4 深度指南
+
+**链接**: [DeepSeek V4 深度指南](./deepseek-v4/)
+
+**简介**: 深入解析 DeepSeek V4 的架构创新（CSA+HCA 混合注意力、mHC 流形约束超连接）、训练方法（OPD/GRM）、性能评测与工程实践，从源码级理解这个万亿参数开源模型的技术突破
+
+**适合读者**:
+- 有一定 AI/LLM 基础的初中级开发者
+- 希望深入了解 DeepSeek V4 架构创新的工程师
+- 需要评估模型选型的技术决策者
+- 对国产 AI 生态感兴趣的从业者
+
+**主要内容**:
+
+1. [概览与战略定位](./deepseek-v4/01-overview-strategy) - 双版本定位与 2026 竞争格局
+2. [MoE 架构深度剖析](./deepseek-v4/02-moe-architecture) - 专家路由机制与工程挑战
+3. [CSA + HCA 混合注意力](./deepseek-v4/03-csa-hca-attention) - 百万上下文的工程实现 ⭐
+4. [mHC 超连接与 Muon 优化器](./deepseek-v4/04-mhc-muon-optimizer) - 训练稳定性突破
+5. [预训练工程](./deepseek-v4/05-pretraining) - 从 32T tokens 到 Base 模型
+6. [后训练：OPD 与 GRM](./deepseek-v4/06-post-training) - 蒸馏与奖励模型
+7. [全面 Benchmark 评测](./deepseek-v4/07-benchmark-evaluation) - 与全球模型横评
+8. [长上下文与 Agent 能力](./deepseek-v4/08-long-context-agent) - Agent 专项优化
+9. [定价经济学](./deepseek-v4/09-pricing-economics) - 成本优势分析
+10. [API 接入与开发实践](./deepseek-v4/10-api-integration) - 代码示例与迁移指南
+11. [本地部署方案](./deepseek-v4/11-local-deployment) - 量化部署与硬件选型
+12. [国产算力适配实战](./deepseek-v4/12-domestic-chips) - 昇腾/寒武纪适配
+13. [全球大模型全景对比](./deepseek-v4/13-global-comparison) - 选型决策树
+14. [开源生态与未来趋势](./deepseek-v4/14-ecosystem-future) - MIT 生态与路线图
+
+---
+
 ## 即将推出
 
 - **Agent 架构设计深度指南**

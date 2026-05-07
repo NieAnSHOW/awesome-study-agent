@@ -112,6 +112,7 @@ export default withMermaid(defineConfig({
           { text: 'Agent Skills 系统', link: '/deep-dive/agent-skills/' },
           { text: '大模型上下文管理', link: '/deep-dive/context-management/' },
           { text: 'OpenClaw 深度指南', link: '/deep-dive/openclaw/' },
+          { text: 'DeepSeek V4 深度指南', link: '/deep-dive/deepseek-v4/' },
         ]
       },
       {
@@ -505,6 +506,27 @@ export default withMermaid(defineConfig({
                   { text: '十二、Live Canvas 与 A2UI 协议', link: 'openclaw/12-live-canvas-a2ui' },
                   { text: '十三、生态对比与混合架构决策', link: 'openclaw/13-ecosystem-comparison' },
                   { text: '十四、实战案例与场景最佳实践', link: 'openclaw/14-scenarios-cases' },
+                ]
+              },
+              {
+                text: 'DeepSeek V4 深度指南',
+                collapsed: true,
+                items: [
+                  { text: '本指南主页', link: 'deepseek-v4/' },
+                  { text: '一、概览与战略定位', link: 'deepseek-v4/01-overview-strategy' },
+                  { text: '二、MoE 架构深度剖析', link: 'deepseek-v4/02-moe-architecture' },
+                  { text: '三、CSA + HCA 混合注意力', link: 'deepseek-v4/03-csa-hca-attention' },
+                  { text: '四、mHC 超连接与 Muon 优化器', link: 'deepseek-v4/04-mhc-muon-optimizer' },
+                  { text: '五、预训练：从 32T tokens 到 Base 模型', link: 'deepseek-v4/05-pretraining' },
+                  { text: '六、后训练：OPD 与 GRM', link: 'deepseek-v4/06-post-training' },
+                  { text: '七、全面 Benchmark 评测', link: 'deepseek-v4/07-benchmark-evaluation' },
+                  { text: '八、长上下文与 Agent 能力', link: 'deepseek-v4/08-long-context-agent' },
+                  { text: '九、定价经济学与成本优化', link: 'deepseek-v4/09-pricing-economics' },
+                  { text: '十、API 接入与开发实践', link: 'deepseek-v4/10-api-integration' },
+                  { text: '十一、本地部署方案', link: 'deepseek-v4/11-local-deployment' },
+                  { text: '十二、国产算力适配实战', link: 'deepseek-v4/12-domestic-chips' },
+                  { text: '十三、全球大模型全景对比', link: 'deepseek-v4/13-global-comparison' },
+                  { text: '十四、开源生态与未来趋势', link: 'deepseek-v4/14-ecosystem-future' },
                 ]
               },
             ]

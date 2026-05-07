@@ -1,861 +1,255 @@
-# 开发环境搭建
+# Trae 与国内编程工具
 
-选择好工具后，需要正确配置才能发挥最大效果。
+> **学习目标**：了解 Trae 及其他国内 AI 编程工具，掌握通用环境搭建方法
+> **预计时间**：40 分钟
+> **难度**：⭐⭐
 
-## 选择组合
+---
 
-### 常见组合
+## 一句话结论
 
-根据不同需求选择：
+字节跳动的 Trae 是 2026 年国内最好用的免费 AI IDE。不是"平替 Cursor"，而是"为国内开发者定制的 AI 编程工具"。不用翻墙、不用外币信用卡、深度集成国产大模型。配合 CodeBuddy、通义灵码等工具，国内开发者完全可以在不接触海外工具的情况下完成专业开发。
 
-**组合 1：AI 原生（推荐新手）**
+## 国内 AI 编程工具格局
+
+2026 年的国内 AI 编程工具市场，格局已经很清晰了：
+
+| 工具 | 出品方 | 类型 | 价格 | 核心优势 |
+|------|--------|------|------|---------|
+| **Trae** | 字节跳动 | 完整 IDE | 免费 | AI 原生、好用、懂中国开发者 |
+| **CodeBuddy** | 腾讯 | VS Code 插件 | 免费 | 集成腾讯云、代码审查 |
+| **通义灵码** | 阿里巴巴 | VS Code 插件 | 免费 | 通义千问模型、淘宝/阿里云生态 |
+| **百度 Comate** | 百度 | VS Code 插件 | 免费 | 文心一言模型、百度生态 |
+| **CodeGeeX** | 智谱 AI | VS Code 插件 | 免费 | 开源模型、私部署 |
+
+**注意：这些工具全部免费。** 国内 AI 编程工具的策略是"先免费抢市场"——不像海外工具已经进入收费阶段。
+
+花叔观点：国内工具跟海外工具的差距在不断缩小。Trae 在某些场景下体验不输 Cursor，差距主要在海外模型的编程能力上。但随着国产模型（DeepSeek、GLM、Qwen）编程能力的提升，这个差距在快速缩小。
+
+## Trae — 字节跳动的 AI IDE
+
+### 是什么
+
+Trae 是字节跳动推出的 AI 原生 IDE。跟 Cursor 一样，不是 VS Code 插件，是完整的编辑器改造——AI 集成在编辑器本身。
+
+**核心特点：**
+- AI 原生 IDE，不是 VS Code 插件
+- 深度集成豆包大模型系列
+- Builder 模式：描述需求，自动生成完整应用
+- 国内直接访问，不需要翻墙
+- 完全免费
+
+### Builder 模式 — 你描述，AI 搭建
+
+Trae 最亮眼的功能是 Builder 模式。你描述一个需求，它直接给你生成一个可运行的应用。
+
+**不是写代码，是搭积木。**
 
 ```
-主工具：Cursor
-辅助：Claude Code
-适合：全栈开发，重度 AI 使用
-成本：$20 + API
+你：创建一个博客系统，包含文章列表、编辑器和用户登录
+Trae：自动生成项目结构 → 创建后端 API → 写前端页面 → 配置数据库
 ```
 
-**组合 2：轻量级（预算有限）**
+Builder 模式适合快速原型和 MVP 开发。花叔评价："这是真正意义上的'一句话生成应用'——虽然不是生产级的，但做原型足够了。"
 
+### 跟 Cursor 的对比
+
+| 维度 | Trae | Cursor |
+|------|------|--------|
+| **价格** | 免费 | $20/月起 |
+| **模型** | 豆包系列 | Claude/GPT/自研 |
+| **Builder 模式** | 有 | 无 |
+| **Agent 模式** | 有 | 有 |
+| **多文件编辑** | 支持 | Composer 2 更强 |
+| **网络** | 直连国内 | 需要海外网络 |
+| **插件兼容** | VS Code 兼容 | VS Code 兼容 |
+| **国际化** | 中英双语 | 英文为主 |
+
+### 安装
+
+1. 去 [trae.com.cn](https://trae.com.cn) 下载
+2. 支持 macOS / Windows
+3. 安装后登录字节账号（抖音/飞书都行）
+4. 导入 VS Code 配置
+
+### 快速上手
+
+```bash
+# 先在 Trae 里打开项目目录
+# 启动 Builder 模式
+Cmd + Shift + B  # macOS
+Ctrl + Shift + B # Windows
 ```
-主工具：VS Code + Copilot Free
-辅助：Codeium
-适合：轻度使用，学生
-成本：$0
-```
 
-**组合 3：终端爱好者**
+**推荐的第一个任务：** 用 Builder 模式生成一个简单的 TODO 应用。5 分钟搞定，让你感受一下 Trae 的完整工作流。
 
-```
-主工具：任何编辑器 + Claude Code
-适合：喜欢命令行，灵活配置
-成本：API 费用
-```
+### 花叔评价
 
-**组合 4：企业级**
+Trae 是 2026 年国内开发者入门 AI 编程的第一选择。理由：
 
-```
-主工具：JetBrains + Tabnine Enterprise
-辅助：自定义 MCP 服务器
-适合：大公司，敏感代码
-成本：$49/用户/月
-```
+1. **免费** — 没有预算门槛，学生党也能用
+2. **直连** — 不需要翻墙，不需要外币信用卡
+3. **中文友好** — Prompt 提示、交互界面都是中文
+4. **国产模型** — 豆包模型的编程能力在持续提升
 
-## Cursor 环境搭建
+但如果你追求编程质量的上限，海外工具仍然是更好的选择。花叔的立场：**先用 Trae 入门，再升级 Cursor。**
 
-### 步骤 1：安装
+## 腾讯 CodeBuddy
 
-1. **下载**
-   - 访问 [cursor.com](https://cursor.com)
-   - 选择对应平台（macOS/Windows/Linux）
-   - 安装
+CodeBuddy 是腾讯出品的 VS Code 插件。不是独立 IDE，是在 VS Code 里装一个 AI 编程助手。
 
-2. **首次启动**
-   - 登录账号（Google/GitHub/Email）
-   - 选择主题（跟 VS Code 一样）
-   - 导入 VS Code 配置（可选）
+**跟 Trae 的区别：**
+- Trae 是完整 IDE（类似 Cursor）
+- CodeBuddy 是 VS Code 插件（类似 Copilot）
 
-### 步骤 2：基本配置
+**核心功能：**
+- 代码补全
+- 代码对话
+- 代码审查
+- 腾讯云服务集成
 
-**推荐 settings.json：**
+**适合谁：** 已经在用 VS Code 的开发者，不想换 IDE，只想增加 AI 能力。
+
+## 通义灵码
+
+阿里巴巴出品的 VS Code 插件。跟 CodeBuddy 类似，但模型用的是通义千问。
+
+**特色：**
+- 深度集成阿里云服务
+- 淘宝/天猫生态支持
+- 通义千问模型的代码理解能力
+
+安装方式：在 VS Code 扩展商店搜索"通义灵码"，点击安装即可。
+
+## 国产模型的编程能力
+
+国内大模型在编程能力上的排名（2026 年实测）：
+
+| 模型 | 出品方 | 编程能力 | 适合场景 |
+|------|--------|---------|---------|
+| DeepSeek-V4 | 深度求索 | ⭐⭐⭐⭐⭐ | 复杂逻辑、架构设计 |
+| GLM-6 | 智谱 AI | ⭐⭐⭐⭐ | 日常开发、代码补全 |
+| Qwen 3 | 阿里巴巴 | ⭐⭐⭐⭐ | 全栈开发、调试 |
+| 豆包 2.0 | 字节跳动 | ⭐⭐⭐⭐ | Trae 内集成 |
+| 文心 4.5 | 百度 | ⭐⭐⭐ | 简单任务 |
+
+花叔实测：在复杂编程任务上，DeepSeek-V4 的推理能力已经接近 GPT-5 水平，但有些细节处理还有差距。日常开发场景，国产模型完全够用。
+
+## 通用环境搭建指南
+
+无论你选 Cursor、Trae 还是 Claude Code，环境搭建的思路是一样的。这里给一套通用流程。
+
+### 1. 选择编辑器
+
+| 情况 | 推荐 |
+|------|------|
+| 国内开发者，不想折腾 | Trae |
+| 追求最强 AI 能力 | Cursor |
+| 习惯 VS Code 不想换 | VS Code + CodeBuddy / 通义灵码 |
+
+### 2. 基本配置
 
 ```json
 {
-  "cursor.completion.enable": true,
-  "cursor.chat.enable": true,
-  "cursor.agent.enable": true,
   "editor.fontSize": 14,
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "workbench.colorTheme": "Default Dark+",
   "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 1000
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.git": true
+  }
 }
 ```
 
-**如何设置：**
-1. 按 `Cmd+,`（macOS）或 `Ctrl+,`（Windows）
-2. 搜索 "settings json"
-3. 点击"在 settings.json 中编辑"
+### 3. 项目规则
 
-### 步骤 3：项目规则
-
-创建 `.cursorrules`：
-
-```bash
-# 在项目根目录
-touch .cursorrules
-```
-
-**示例内容：**
+创建 `.cursorrules`（Cursor 用）或 `CLAUDE.md`（Claude Code 用）：
 
 ```markdown
-# 项目编码规范
+# 项目规范
 
 ## 技术栈
 - TypeScript 严格模式
 - React 18 + Next.js 14
 - Tailwind CSS
 
-## 代码风格
-- 函数式组件 + Hooks
-- 组件命名：PascalCase
-- 函数命名：camelCase
-- 常量：UPPER_SNAKE_CASE
-
 ## 导入顺序
 1. React
 2. 第三方库
 3. 绝对导入（@/）
 4. 相对导入（./）
-
-## 约束
-- 避免使用 any
-- 所有 API 调用处理错误
-- 组件文件最大 300 行
 ```
 
-### 步骤 4：推荐插件
+### 4. 必备插件
 
-虽然 Cursor 内置了很多功能，但这些插件仍然有用：
+- Prettier — 代码格式化
+- ESLint — 代码检查
+- GitLens — Git 增强
+- Error Lens — 内联错误显示
 
-```bash
-# 必装
-- Prettier - 代码格式化
-- ESLint - 代码检查
-- GitLens - Git 增强
+### 5. 快捷键记忆
 
-# 推荐
-- Error Lens - 内联错误显示
-- Import Cost - 显示包大小
-- TODO Highlight - 高亮 TODO
-```
+| 功能 | 快捷键 |
+|------|--------|
+| AI Chat | `Cmd + L` |
+| AI Composer | `Cmd + I` |
+| 快速修复 | `Cmd + K` |
+| 打开终端 | `` Ctrl + ` `` |
 
-### 步骤 5：快捷键
+## 国内开发者的最佳实践
 
-**自定义快捷键（keybindings.json）：**
-
-```json
-[
-  {
-    "key": "cmd+shift+c",
-    "command": "cursor.chat.open"
-  },
-  {
-    "key": "cmd+shift+i",
-    "command": "cursor.composer.open"
-  },
-  {
-    "key": "cmd+shift+a",
-    "command": "cursor.agent.toggle"
-  }
-]
-```
-
-## Claude Code 环境搭建
-
-### 步骤 1：安装
-
-```bash
-# 全局安装
-npm install -g @anthropic-ai/claude-code
-
-# 验证
-claude --version
-```
-
-### 步骤 2：认证
-
-**方法一：API Key（适合按量付费）**
-
-1. 访问 [Anthropic Console](https://console.anthropic.com)
-2. 创建 API Key
-3. 设置环境变量：
-
-```bash
-# 临时（当前会话）
-export ANTHROPIC_API_KEY="your-key"
-
-# 永久（加到配置文件）
-echo 'export ANTHROPIC_API_KEY="your-key"' >> ~/.zshrc
-source ~/.zshrc
-```
-
-**方法二：订阅登录（推荐）**
-
-```bash
-# 首次运行会提示登录
-claude
-
-# 按提示在浏览器登录
-# Claude Pro 或 Max 订阅用户直接用
-```
-
-### 步骤 3：配置文件
-
-**全局配置（~/.claude/settings.json）：**
-
-```json
-{
-  "model": "claude-sonnet-4-6",
-  "maxTokens": 8192,
-  "permissions": {
-    "allowedTools": [
-      "Read",
-      "Write",
-      "Bash(git *)",
-      "Bash(npm test)",
-      "Bash(npm run dev)"
-    ],
-    "deny": [
-      "Read(.env*)",
-      "Write(.env*)",
-      "Bash(rm -rf *)",
-      "Bash(dd *)"
-    ]
-  }
-}
-```
-
-**创建配置目录：**
-
-```bash
-mkdir -p ~/.claude
-nano ~/.claude/settings.json
-# 粘贴上面的配置
-```
-
-### 步骤 4：项目配置
-
-**项目配置（.claude/settings.json）：**
-
-```bash
-cd your-project
-mkdir -p .claude
-nano .claude/settings.json
-```
-
-```json
-{
-  "model": "claude-sonnet-4-6",
-  "maxTokens": 4096,
-  "permissions": {
-    "allowedTools": [
-      "Read",
-      "Write",
-      "Bash(git *)",
-      "Bash(npm *)"
-    ]
-  },
-  "hooks": {
-    "PostToolUse": [
-      {
-        "matcher": "Write(*.ts)",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "npx prettier --write $file"
-          }
-        ]
-      },
-      {
-        "matcher": "Write(*.py)",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "black $file"
-          }
-        ]
-      }
-    ]
-  }
-}
-```
-
-### 步骤 5：CLAUDE.md
-
-**全局 CLAUDE.md（~/.claude/CLAUDE.md）：**
-
-```bash
-nano ~/.claude/CLAUDE.md
-```
-
-```markdown
-# 我的开发偏好
-
-## 编码风格
-- TypeScript 严格模式
-- 函数式编程优先
-- 避免嵌套超过 3 层
-- 函数不超过 50 行
-
-## 注释习惯
-- 复杂逻辑必须注释
-- 简单代码不需要注释
-- 注释说明"为什么"，不是"什么"
-
-## 测试
-- 所有新功能写测试
-- 测试覆盖率 > 80%
-- 用 TDD 或测试后置都行
-
-## 性能
-- 避免不必要的重渲染
-- 大列表用虚拟滚动
-- 图片懒加载
-```
-
-**项目 CLAUDE.md（./CLAUDE.md）：**
-
-```bash
-nano CLAUDE.md
-```
-
-```markdown
-# 项目：[项目名]
-
-## 概述
-[项目简介]
-
-## 技术栈
-- 前端：[框架和版本]
-- 后端：[框架和版本]
-- 数据库：[数据库和版本]
-
-## 架构
-[项目架构说明]
-
-## 编码规范
-[团队编码规范]
-
-## 文件结构
-[目录结构说明]
-
-## API 文档
-[API 文档链接或说明]
-
-## 常见问题
-[开发中常见问题]
-```
-
-### 步骤 6：终端集成
-
-**iTerm2（macOS）：**
-
-1. 打开 Profiles → Keys
-2. 添加快捷键：
-   - `Cmd+L`：启动 Claude Code
-   - `Shift+Enter`：发送到 Claude Code
-
-**VS Code 集成：**
-
-```bash
-# 安装扩展
-code --install-extension claude-code.vscode
-
-# 在集成终端使用
-claude
-```
-
-**Warp 终端：**
-
-```bash
-# Warp 有 AI 集成，配置 Claude Code
-# Settings → AI → Configure → Claude Code
-```
-
-## VS Code + Copilot 环境搭建
-
-### 步骤 1：安装 VS Code
-
-```bash
-# macOS
-brew install --cask visual-studio-code
-
-# Windows
-# 从官网下载安装器
-# code.visualstudio.com
-
-# Linux
-# 从官网下载 .deb 或 .rpm
-```
-
-### 步骤 2：安装 Copilot
-
-1. 在 VS Code 中打开扩展面板（`Cmd+Shift+X`）
-2. 搜索 "GitHub Copilot"
-3. 点击安装
-4. 登录 GitHub 账号
-5. 开始免费试用（现在免费了）
-
-### 步骤 3：配置 Copilot
-
-```json
-// settings.json
-{
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
-    "plaintext": false,
-    "markdown": true
-  },
-  "github.copilot.inlineSuggest.enable": true,
-  "github.copilot.advanced": {
-    "inlineSuggestCount": 3
-  }
-}
-```
-
-### 步骤 4：Copilot Chat（可选）
-
-安装 GitHub Copilot Chat 扩展：
-
-```bash
-# 在 VS Code 扩展市场搜索
-# "GitHub Copilot Chat"
-```
-
-### 步骤 5：快捷键
-
-```json
-// keybindings.json
-[
-  {
-    "key": "cmd+shift+i",
-    "command": "github.copilot.openInlineChat"
-  },
-  {
-    "key": "cmd+shift+/",
-    "command": "github.copilot.openCopilotChat"
-  }
-]
-```
-
-## 多工具协同配置
-
-### Cursor + Claude Code
-
-**在 Cursor 终端用 Claude Code：**
-
-1. 打开 Cursor
-2. 打开集成终端（`` Ctrl+` ``）
-3. 运行 `claude`
-4. Cursor 编辑代码，Claude Code 处理复杂任务
-
-**配置 .claude/settings.local.json：**
-
-```json
-{
-  "model": "claude-opus-4-6",
-  "maxTokens": 8192
-}
-```
-
-这个文件不提交到 git，是个人的高级配置。
-
-### VS Code + Copilot + Claude Code
-
-**安装扩展：**
-
-```bash
-code --install-extension github.copilot
-code --install-extension github.copilot-chat
-```
-
-**工作流：**
-- Copilot：实时补全
-- Copilot Chat：简单对话
-- Claude Code：复杂任务
-
-### Windsurf + Claude Code
-
-类似 Cursor，Windsurf 也有集成终端。
-
-```bash
-# 启动 Windsurf
-# 打开终端
-claude
-```
-
-## 高级配置
-
-### MCP 服务器
-
-**什么是 MCP：**
-Model Context Protocol，让 Claude Code 连接外部工具。
-
-**安装示例：Google Drive MCP**
-
-```bash
-# 安装 MCP 服务器
-npm install -g @modelcontextprotocol/server-gdrive
-
-# 配置
-claude mcp add gdrive -e GOOGLE_CREDENTIALS=/path/to/credentials.json
-```
-
-**使用：**
+### 方案一：纯国内方案（推荐入门）
 
 ```
-"读取 Google Drive 里的设计规范：
-gdrive://设计规范.docx"
+编辑器：Trae
+终端辅助：无（Trae 内置够用）
+成本：$0
+适合：学生、新手、不想折腾的开发者
 ```
 
-**其他 MCP 服务器：**
-- `@modelcontextprotocol/server-postgres` - 数据库
-- `@modelcontextprotocol/server-filesystem` - 文件系统
-- `@modelcontextprotocol/server-github` - GitHub 集成
+### 方案二：国内 + 海外混合
 
-### 自定义命令
-
-**创建命令目录：**
-
-```bash
-mkdir -p .claude/commands
+```
+编辑器：Cursor
+模型接入：通过 API 网关接入国产模型
+终端辅助：Claude Code（通过 API 中继）
+成本：$20/月（Cursor）+ API 费用
+适合：追求最佳效果，但不想完全依赖海外的开发者
 ```
 
-**代码审查命令：**
+### 方案三：团队协作
 
-```markdown
-<!-- .claude/commands/review.md -->
-审查以下代码：
-- 安全性（SQL 注入、XSS、CSRF）
-- 性能（时间/空间复杂度）
-- 可读性（命名、注释）
-- 测试覆盖
-
-提供改进建议和修改方案。
+```
+编辑器：Trae / VS Code + CodeBuddy
+文档：飞书 + Kiro
+部署：阿里云 / 腾讯云
+成本：按团队规模
+适合：国内企业、创业团队
 ```
 
-使用：`/review @./src/components/UserAuth.tsx`
+## 花叔总结
 
-**创建组件命令：**
+2026 年国内 AI 编程生态已经足够好了。不是"平替"，是"另一种选择"。
 
-```markdown
-<!-- .claude/commands/component.md -->
-创建 React 组件：
+- 不想折腾 → Trae
+- 想省钱 → 国内工具全家桶（全免费）
+- 追求极致 → Cursor + 国产模型 API 中继
+- 团队协作 → CodeBuddy / 通义灵码
 
-参数：$ARGUMENTS
-
-遵循规范：
-- TypeScript 严格模式
-- 函数式组件 + Hooks
-- 样式用 Tailwind
-- 添加 PropTypes 注释
-- 导出 memo 优化
-```
-
-使用：`/component UserCard -id:string -name:string -email:string`
-
-### 自动化 Hooks
-
-**TypeScript 自动格式化：**
-
-```json
-// .claude/settings.json
-{
-  "hooks": {
-    "PostToolUse": [
-      {
-        "matcher": "Write(*.{ts,tsx})",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "npx prettier --write $file && npx eslint --fix $file"
-          }
-        ]
-      }
-    ]
-  }
-}
-```
-
-**Python 自动格式化和类型检查：**
-
-```json
-{
-  "hooks": {
-    "PostToolUse": [
-      {
-        "matcher": "Write(*.py)",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "black $file && mypy $file"
-          }
-        ]
-      }
-    ]
-  }
-}
-```
-
-**提交前自动测试：**
-
-```json
-{
-  "hooks": {
-    "UserPromptSubmit": [
-      {
-        "matcher": "*commit*",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "npm test"
-          }
-        ]
-      }
-    ]
-  }
-}
-```
-
-## Shell 集成
-
-### Zsh 配置
-
-```bash
-# ~/.zshrc
-
-# Claude Code 快捷方式
-alias cc='claude'
-alias ccc='claude -c'  # 继续上次对话
-alias ccp='claude -p'  # 打印模式
-
-# 快速函数
-ccg() {
-  claude "git: $@"
-}
-
-# 示例：ccg status
-```
-
-### Bash 配置
-
-```bash
-# ~/.bashrc
-
-# Claude Code
-alias cc='claude'
-alias ccc='claude -c'
-alias ccp='claude -p'
-
-# 快速函数
-cc-test() {
-  claude "运行测试并分析失败：npm test"
-}
-
-cc-review() {
-  claude "审查当前改动：git diff"
-}
-```
-
-### PowerShell（Windows）
-
-```powershell
-# $PROFILE
-
-function cc { claude $args }
-function ccc { claude -c }
-function ccp { claude -p $args }
-
-function cc-test {
-  claude "运行测试：npm test"
-}
-```
-
-## 性能优化
-
-### 减少延迟
-
-**使用更快的模型：**
-
-```json
-// 简单任务用 Haiku
-{
-  "model": "claude-haiku-4-5-20251001"
-}
-```
-
-**限制上下文：**
-
-```json
-{
-  "maxTokens": 2048,  // 减少 token 数
-  "maxTurns": 3      // 限制对话轮数
-}
-```
-
-### 本地缓存
-
-```bash
-# Claude Code 自动缓存会话
-# 清理缓存
-claude --clear-cache
-```
-
-### 并发使用
-
-```bash
-# 多个终端会话
-# 终端 1
-claude
-
-# 终端 2
-claude -c
-
-# 终端 3
-claude -r "session-id"
-```
-
-## 故障排查
-
-### Cursor 问题
-
-**问题：响应慢**
-- 检查网络连接
-- 切换到 Haiku 模型
-- 减少上下文文件数量
-
-**问题：Agent 失败**
-- 查看错误日志
-- 检查权限设置
-- 手动执行失败的命令
-
-**问题：插件冲突**
-- 禁用其他 AI 插件
-- 重启 Cursor
-- 清理缓存
-
-### Claude Code 问题
-
-**问题：认证失败**
-```bash
-# 检查 API key
-echo $ANTHROPIC_API_KEY
-
-# 重新登录
-claude --logout
-claude
-```
-
-**问题：权限被拒**
-```json
-// 检查 permissions 配置
-{
-  "permissions": {
-    "allowedTools": ["Read", "Write"]
-  }
-}
-```
-
-**问题：文件未找到**
-```bash
-# 检查当前目录
-pwd
-
-# 指定完整路径
-claude "分析 @./full/path/to/file.ts"
-```
-
-### VS Code Copilot 问题
-
-**问题：无法补全**
-- 检查网络连接
-- 确认登录状态
-- 重启 VS Code
-
-**问题：Copilot Chat 不工作**
-- 更新扩展到最新版本
-- 检查 GitHub 账号状态
-- 查看 Copilot 日志
-
-## 学习路径
-
-### 新手（第 1 周）
-
-1. 选择一个工具（推荐 Cursor 或 VS Code + Copilot）
-2. 完成基本安装和配置
-3. 尝试简单任务：
-   - 代码补全
-   - 解释代码
-   - 重构函数
-4. 熟悉快捷键
-
-### 进阶（第 2-4 周）
-
-1. 创建 `.cursorrules` 或 `CLAUDE.md`
-2. 学习高级功能：
-   - Composer / Agent 模式
-   - 自定义命令
-   - Hooks
-3. 在真实项目中使用
-4. 建立自己的 Prompt 库
-
-### 高级（第 2-3 个月）
-
-1. 配置 MCP 服务器
-2. 创建自定义 Skills
-3. 优化工作流
-4. 分享给团队
-
-## 下一步
-
-1. **选择工具**
-   - 新手：Cursor
-   - 预算有限：VS Code + Copilot Free
-   - 命令行：Claude Code
-
-2. **安装配置**
-   - 跟着上面的步骤
-   - 5-10 分钟完成
-
-3. **第一个项目**
-   ```bash
-   # 创建测试项目
-   npm create vite@latest test-ai-coding
-   cd test-ai-coding
-   npm install
-
-   # 用 AI 工具打开
-   cursor .  # 或 code .
-   ```
-
-4. **尝试功能**
-   ```
-   "创建一个计数器组件：
-   - 显示数字
-   - 加减按钮
-   - 重置按钮
-   - 用 TypeScript 和 Tailwind"
-   ```
-
-5. **深入学习**
-   - 阅读[最佳实践](/agent-ecosystem/06-ai-coding-tools/04-best-practices)
-   - 探索其他工具
-   - 建立自己的配置
-
-## 参考资源
-
-**官方文档：**
-- [Cursor 文档](https://cursor.sh/docs)
-- [Claude Code 文档](https://code.claude.com/docs)
-- [GitHub Copilot 文档](https://docs.github.com/en/copilot)
-
-**视频教程：**
-- [Claude Code 初学者教程](https://www.youtube.com/watch?v=kddjxKEeCuM)
-- [Cursor 快速上手](https://www.youtube.com/watch?v=oQDCAJnr1aY)
-
-**社区：**
-- [Cursor Discord](https://discord.gg/cursor)
-- [Claude Discord](https://discord.gg/anthropic)
-- [Reddit r/cursor](https://reddit.com/r/cursor)
+**花叔名言："工具是手段不是目的。能让你快速出活的工具就是好工具，不管它是哪个国家的。"**
 
 ---
 
-**恭喜！** 你已经完成模块六的学习。现在可以选择一个工具开始实践了。
+## 本节小结
 
-[← 返回课程首页](/preface)
+- Trae 是 2026 年国内最好的免费 AI IDE，Builder 模式是亮点
+- CodeBuddy、通义灵码等国产插件提供了丰富的替代选择
+- 国产模型（尤其是 DeepSeek-V4）的编程能力在快速追赶
+- 环境搭建遵循一套通用流程：选编辑器 → 配置 → 加插件 → 建规则
+- 国内开发者有纯国内方案、混合方案、团队方案三种选择
+
+---
+
+[← 返回章节目录](/agent-ecosystem/06-ai-coding-tools) | [继续学习：工具组合与最佳实践 →](/agent-ecosystem/06-ai-coding-tools/06-cc-switch)

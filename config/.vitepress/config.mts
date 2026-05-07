@@ -75,6 +75,7 @@ export default withMermaid(defineConfig({
           { text: 'RAG 技术', link: '/ai-basics/05-rag-knowledge/' },
           { text: '模型训练', link: '/ai-basics/08-model-training/' },
           { text: '多模态 AI 技术', link: '/ai-basics/13-multimodal-ai/' },
+          { text: 'DeepSeek 与国产大模型', link: '/ai-basics/20-domestic-llm/' },
         ]
       },
       {
@@ -214,6 +215,19 @@ export default withMermaid(defineConfig({
                   { text: '多模态 Transformer', link: '13-multimodal-ai/04-multimodal-transformers' },
                   { text: '应用场景', link: '13-multimodal-ai/05-applications' },
                   { text: 'Agent 集成实践', link: '13-multimodal-ai/06-agent-integration' },
+                ]
+              },
+              {
+                text: 'DeepSeek 与国产大模型',
+                collapsed: true,
+                items: [
+                  { text: '模块介绍', link: '20-domestic-llm/' },
+                  { text: '国产大模型崛起背景', link: '20-domestic-llm/01-overview' },
+                  { text: 'DeepSeek 深度解析', link: '20-domestic-llm/02-deepseek' },
+                  { text: '通义千问与 Qwen 生态', link: '20-domestic-llm/03-qwen' },
+                  { text: '豆包与字节 AI 矩阵', link: '20-domestic-llm/04-doubao' },
+                  { text: 'Kimi 与其他国产模型', link: '20-domestic-llm/05-kimi-others' },
+                  { text: '选型指南', link: '20-domestic-llm/06-model-selection' },
                 ]
               },
             ]

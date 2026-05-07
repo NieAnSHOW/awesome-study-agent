@@ -20,6 +20,8 @@
 - **Function Calling** - 工具调用的技术实现和最佳实践
 - **Agent 编排** - 多 Agent 协作的架构模式和生产实践
 - **DeerFlow** - 字节跳动开源的 Super Agent Harness，完整运行时与编排
+- **pi-coding-agent** - 开源终端编码 Agent，支持 25+ LLM Provider
+- **A2UI** - Google 出品的 Agent 声明式 UI 协议
 
 ### 为什么这一模块很重要？
 
@@ -68,6 +70,10 @@
 11. [Pencil MCP 集成](/agent-ecosystem/07-agent-ecosystem/11-pencil-mcp) - Agent 驱动设计的自动化工作流
 12. [DeerFlow 概述](/agent-ecosystem/07-agent-ecosystem/12-deerflow-overview) - Super Agent Harness 架构与核心概念
 13. [DeerFlow 实战部署](/agent-ecosystem/07-agent-ecosystem/13-deerflow-deploy) - 安装配置与使用指南
+14. [pi-coding-agent 概述](/agent-ecosystem/07-agent-ecosystem/14-pi-coding-agent-overview) - 开源终端编码 Agent 架构与核心设计
+15. [pi-coding-agent 实战](/agent-ecosystem/07-agent-ecosystem/15-pi-coding-agent-deploy) - 安装配置、扩展开发和 SDK 集成
+16. [A2UI 概述](/agent-ecosystem/07-agent-ecosystem/16-a2ui-overview) - Agent 声明式 UI 协议的设计与架构
+17. [A2UI 实战](/agent-ecosystem/07-agent-ecosystem/17-a2ui-deploy) - 组件定义、渲染器使用和自定义扩展
 
 ## 学习检验
 
@@ -86,6 +92,10 @@
 - [ ] 理解 Pencil 原型工具及 MCP 集成的工作流
 - [ ] 理解 DeerFlow 的 Super Agent Harness 定位和编排模式
 - [ ] 能独立完成 DeerFlow 的 Docker 部署和基本使用
+- [ ] 理解 pi-coding-agent 的极简设计哲学和核心架构
+- [ ] 能安装使用 pi-coding-agent 并编写自定义扩展
+- [ ] 理解 A2UI 声明式 UI 协议的设计动机和架构
+- [ ] 能使用 A2UI 组件并与 Agent 进行集成
 
 ## 扩展阅读
 
@@ -115,6 +125,14 @@
 - [DeerFlow 官网](https://deerflow.tech) - 官方文档和演示
 - [Dify 官网](https://dify.ai) - 开源 LLMOps 平台
 - [扣子(Coze) 官网](https://www.coze.com) - AI Bot 开发平台
+
+**pi-coding-agent 专题**：
+- [pi-mono GitHub 仓库](https://github.com/badlogic/pi-mono) - 开源终端编码 Agent
+- [pi-coding-agent 官方文档](https://pi-agent.dev) - 文档和示例
+
+**A2UI 专题**：
+- [A2UI GitHub 仓库](https://github.com/google/A2UI) - Google Agent UI 协议
+- [A2UI 官网](https://a2ui.org) - 协议规范和文档
 
 ---
 

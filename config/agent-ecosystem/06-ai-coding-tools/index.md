@@ -1,258 +1,116 @@
 # AI 编程工具
 
-> **学习目标**：掌握主流 AI 编程工具的使用方法，建立高效的 AI 辅助开发工作流
-
+> **学习目标**：掌握 2026 年主流 AI 编程工具的全景和用法，找到适合你的工具组合
 > **预计时间**：8-10 小时
+> **难度**：⭐⭐
 
-> **前置知识**：
-> - 基本的编程经验
-> - 熟悉命令行操作
-> - 了解 Git 基础
+---
+
+## 一句话结论
+
+AI 编程工具不是锦上添花，是必需品。2026 年，约 84% 的开发者已经在用 AI 辅助编程。不是"要不要用"的问题，是"用哪个、怎么组合"的问题。
+
+花叔说的："不是 AI 替你写代码，是 AI 让你一天干三天的话。"
 
 ## 模块介绍
 
-AI 编程工具已经从"锦上添花"变成"必需品"。2025 年，约 84% 的开发者在使用 AI 辅助编程。
+2026 年的 AI 编程工具格局跟两年前完全不同了。
 
-这个模块会带你了解：
-- **Cursor**：AI 原生 IDE，深度集成，功能最强
-- **Claude Code**：终端工具，灵活可扩展
-- **其他工具**：从 GitHub Copilot 到国产 IDE（Trae、CodeBuddy）、CLI 代理（Gemini CLI、Codex CLI）、Vibe Coding（v0、Lovable）、开源方案（Aider、Continue）等
-- **最佳实践**：怎么用好这些工具
-- **环境搭建**：从零开始的配置指南
+Cursor 从 VS Code 的一个 fork 变成了 AI IDE 霸主 — 3.x 版本加入了异步子智能体，Composer 一次改几十个文件跟玩一样。Claude Code 从一个终端实验品变成了工程化编程的标杆 — 51 万行代码，grep 打败了 RAG。Windsurf 被 Google 收购后推出 Antigravity。OpenAI 搞了 Codex CLI 沙箱安全方案。Amazon 出了 Kiro。字节跳动做了 Trae。
 
-**你会学到：**
-1. 选择适合你的 AI 编程工具
-2. 配置和优化开发环境
-3. 建立高效的 AI 辅助工作流
-4. 避免常见陷阱
+神仙打架，用户受益。
 
-**学习方式：**
-- 理论 + 实践结合
-- 每个工具都有详细说明
-- 提供真实使用场景
-- 包含配置文件示例
+但工具越多，选择越难。这个模块帮你解决一个核心问题：**哪个工具适合你，怎么组合最划算**。
 
 ## 章节列表
 
-- [Cursor 编辑器](/agent-ecosystem/06-ai-coding-tools/01-cursor) - AI 原生 IDE，功能最强大
-- [Claude Code](/agent-ecosystem/06-ai-coding-tools/02-claude-code) - 终端 AI 助手，高度可定制
-- [其他 AI 编程工具](/agent-ecosystem/06-ai-coding-tools/03-other-tools) - 国产 IDE、CLI 代理、Vibe Coding、开源方案等全景对比
-- [最佳实践](/agent-ecosystem/06-ai-coding-tools/04-best-practices) - 高效使用 AI 工具的方法
-- [开发环境搭建](/agent-ecosystem/06-ai-coding-tools/05-environment-setup) - 从零开始的配置指南
-- [CC Switch](/agent-ecosystem/06-ai-coding-tools/06-cc-switch) - API 配置管理中心，多供应商一键切换
+| # | 章节 | 核心内容 | 预计时间 |
+|---|------|---------|---------|
+| 1 | [概述与全景](/agent-ecosystem/06-ai-coding-tools) | 2026 年工具格局、选择标准、学习路径 | 20 分钟 |
+| 2 | [Cursor 编辑器](/agent-ecosystem/06-ai-coding-tools/01-cursor) | AI 原生 IDE，Composer 2、Async Subagents、信用额制度 | 60 分钟 |
+| 3 | [Claude Code](/agent-ecosystem/06-ai-coding-tools/02-claude-code) | 终端 AI 助手 2.1，CLAUDE.md、Hooks/Skills、MCP、Worktree | 60 分钟 |
+| 4 | [Windsurf 与 Antigravity](/agent-ecosystem/06-ai-coding-tools/03-other-tools) | Cascade 引擎、Flow 体验、Google 收购后的变化 | 40 分钟 |
+| 5 | [OpenAI Codex 与 Kiro](/agent-ecosystem/06-ai-coding-tools/04-best-practices) | 沙箱执行 CLI + 规格驱动开发 IDE | 40 分钟 |
+| 6 | [Trae 与国内编程工具](/agent-ecosystem/06-ai-coding-tools/05-environment-setup) | 字节 Trae、国内 AI 编程生态、环境搭建 | 40 分钟 |
+| 7 | [工具组合与最佳实践](/agent-ecosystem/06-ai-coding-tools/06-cc-switch) | "Cursor 做手、Claude Code 做脑、Codex 做腿"、成本计算、黄金组合 | 50 分钟 |
+| 8 | [从零搭建实战](/agent-ecosystem/06-ai-coding-tools/07-full-project-practice) | 端到端演示：用 AI 工具从零搭一个 Web 应用 | 60 分钟 |
 
-## 为什么学这个
+## 工具选择速查
 
-### AI 改变了编程
+### 按预算选
 
-**之前：**
-- 手写每一行代码
-- 遇到问题搜 Stack Overflow
-- 重复性工作耗时
-- 代码质量靠经验
+| 预算 | 推荐 | 理由 |
+|------|------|------|
+| $0 | Trae 国内版 + Codex CLI | 一个图形界面、一个终端，都免费 |
+| $20/月 | Cursor Pro | 性价比之王，一个人干三个人的活 |
+| $50/月 | Cursor Pro + Claude Pro | IDE + 终端双工具，覆盖所有场景 |
+| $100+/月 | Cursor Ultra + Claude Max 5x | 重度用户的终极组合 |
 
-**现在：**
-- AI 生成代码，你审查
-- AI 直接回答问题
-- AI 处理重复工作
-- AI 帮助提升质量
+### 按场景选
 
-### 效率提升
-
-根据业界数据：
-- **开发速度**：提升 2-3 倍
-- **代码质量**：Bug 减少 30-50%
-- **学习曲线**：新框架上手快 50%
-- **重复工作**：减少 70%
-
-### 但不是魔法
-
-AI 工具：
-- ✅ 加速你的工作
-- ✅ 提供代码建议
-- ✅ 解释复杂逻辑
-- ❌ 不能替代架构设计
-- ❌ 不能替代业务理解
-- ❌ 可能引入 bug
-
-**关键**：学会正确使用。
+| 场景 | 推荐工具 | 原因 |
+|------|---------|------|
+| 前端开发 | Cursor + Claude Code | Cursor 做手、Claude Code 做脑 |
+| 全栈项目 | Cursor + Codex CLI | Cursor 写界面，Codex 沙箱跑安全敏感代码 |
+| 快速原型 | Trae / Windsurf | Builder 模式一键出活，Flow 体验丝滑 |
+| 重构迁移 | Claude Code + Git Worktree | 终端工具擅长批量操作，Worktree 并行干活 |
+| 安全敏感 | Codex CLI | 沙箱隔离，代码不直接接触文件系统 |
+| 团队协作 | Kiro + Cursor | Kiro 管规格设计，Cursor 管代码实现 |
+| 国内团队 | Trae | 免费直连，合规不翻墙 |
 
 ## 学习路径
 
 ### 路线 1：新手入门（推荐）
 
 ```
-1. 环境搭建 ← 从这里开始
-2. Cursor 编辑器 ← 容易上手（或 Trae 国内版）
-3. 最佳实践 ← 避免走弯路
-4. 其他工具 ← 了解全景
-5. Claude Code ← 进阶使用
-6. CC Switch ← API 统一管理
+1. Trae 国内版 ← 免费上手，零门槛
+2. Cursor 编辑器 ← 主力工具，花 60 分钟掌握
+3. 工具组合与最佳实践 ← 学会搭配
+4. 从零搭建实战 ← 跟着做一遍
 ```
 
 ### 路线 2：快速体验
 
 ```
-1. 其他工具 ← 快速了解全景
-2. 环境搭建 ← 选一个试试
-3. 最佳实践 ← 学习用法
+1. 工具组合与最佳实践 ← 先看全局
+2. 从零搭建实战 ← 跟着做一遍
+3. 按兴趣深入具体工具
 ```
 
 ### 路线 3：深度学习
 
 ```
-1. Cursor 编辑器 ← 主力工具
-2. Claude Code ← 高级技巧
-3. 最佳实践 ← 深入理解
-4. 环境搭建 → 自定义配置
-5. 其他工具 ← 补充了解
-6. CC Switch ← API 配置中心
+1. Cursor 编辑器 ← 深入掌握
+2. Claude Code ← 进阶利器
+3. Windsurf / Codex / Kiro ← 了解竞品
+4. Trae 与国内工具 ← 国产方案
+5. 工具组合与最佳实践 ← 系统总结
 ```
 
-## 工具选择建议
+## 花叔的 AI 编程哲学
 
-### 个人开发者
+花叔有个理论叫 **Harness Engineering** — AI 编程的核心不是模型能力，是给模型造缰绳的工程。
 
-| 情况 | 推荐 | 原因 |
-|------|------|------|
-| 想要最佳体验 | Cursor | 功能最强，体验最好 |
-| 预算有限 | Gemini CLI / Aider | 完全免费，终端可用 |
-| 国内开发者 | Trae 国内版 | 免费 + 国内直连 + 豆包/DeepSeek 模型 |
-| 喜欢命令行 | Claude Code / Codex CLI | 灵活可扩展 |
-| VS Code 用户 | VS Code + Copilot | 无缝集成 |
+什么意思？模型会犯错，会写出烂代码，会用你根本不知道的库。你的工作不是让模型更强，是给它设计约束条件，让它在你画的圈子里跳舞。
 
-### 团队协作
+**三个原则：**
 
-| 场景 | 推荐 | 原因 |
-|------|------|------|
-| 小团队（< 10 人） | Cursor Pro | 成本合理，效果好 |
-| 中型团队 | Cursor Business | 集中管理 |
-| 大企业 | Copilot Enterprise | 安全合规 |
-| 敏感代码 | Tabnine Enterprise | 本地部署 |
-| 国内企业 | CodeBuddy / Trae | 国产定制，合规 |
-| 腾讯生态团队 | CodeBuddy 企业版 | 微信/企微生态集成 |
+1. **CLAUDE.md > 向量数据库** — Claude Code 51 万行代码，零向量数据库，grep 打败了 RAG。简洁即力量。写好项目文档比搞什么 RAG 检索有用 10 倍。
 
-### 不同语言
+2. **工具分工 > 工具选型** — 不是选一个工具干所有事。是让每个工具干最擅长的事。花叔的标准配置：Cursor 做手（写代码），Claude Code 做脑（架构思考），Codex 做腿（跑沙箱里安全操作）。
 
-| 语言 | 推荐工具 |
-|------|----------|
-| TypeScript/JavaScript | Cursor |
-| Python | Cursor / Claude Code |
-| Go | Cursor |
-| Java | Copilot |
-| C/C++ | Codeium |
+3. **先做 20 个垃圾出来** — 别纠结技术选型，先跑起来。花叔的经典案例：1.5 小时用 Cursor 做小猫补光灯，冲上 App Store 付费榜第一。不是技术多牛，是快。
 
 ## 学习检验
 
 完成本模块学习后，你应该能够：
 
-### 基础技能
-- [ ] 了解主流 AI 编程工具的特点（含国产 IDE 和 CLI 代理）
-- [ ] 选择适合自己的工具
-- [ ] 完成基本安装和配置
-
-### 进阶技能
-- [ ] 配置 `.cursorrules` 或 `CLAUDE.md`
-- [ ] 使用 Agent 模式处理复杂任务
-- [ ] 编写有效的 Prompt
-- [ ] 配置 MCP 服务器或自定义命令
-- [ ] 尝试 CLI 代理工具（Gemini CLI / Aider）
-
-### 实践能力
-- [ ] 在真实项目中使用 AI 工具
-- [ ] 建立高效的工作流
-- [ ] 避免 AI 使用的常见陷阱
-- [ ] 评估工具的性价比
-
-### 高级能力
-- [ ] 组合使用多个工具
-- [ ] 为团队配置统一环境
-- [ ] 创建自定义技能和命令
-- [ ] 优化 AI 工作流程
-
-## 扩展阅读
-
-### 官方文档
-- [Cursor 官方文档](https://cursor.sh/docs)
-- [Claude Code 文档](https://code.claude.com/docs)
-- [GitHub Copilot 指南](https://docs.github.com/en/copilot)
-- [Gemini CLI 文档](https://developers.google.com/gemini-code-assist/docs/gemini-cli)
-- [Codex CLI 文档](https://github.com/openai/codex)
-- [Trae 文档](https://docs.trae.ai)
-
-### 深度文章
-- [Addy Osmani: My LLM coding workflow](https://addyosmani.com/blog/ai-coding-workflow/)
-- [2026 AI 编程工具完全指南](https://www.the-ai-corner.com/p/ai-coding-tools-complete-guide-2026)
-- [Every AI Coding CLI in 2026: 30+ Tools Compared](https://dev.to/soulentheo/every-ai-coding-cli-in-2026-the-complete-map-30-tools-compared-4gob)
-- [2026国产AI编程工具横评](https://zhuanlan.zhihu.com/p/2025589657207881943)
-
-### 社区资源
-- [Cursor Discord](https://discord.gg/cursor)
-- [Claude Discord](https://discord.gg/anthropic)
-- [Reddit r/cursor](https://reddit.com/r/cursor)
-- [Aider GitHub](https://github.com/Aider-AI/aider)
-- [CC Switch GitHub](https://github.com/farion1231/cc-switch) — 57K+ Stars 的 API 配置管理工具
-- [CC Switch 菜鸟教程](https://www.runoob.com/ai-agent/cc-switch.html)
-
-### 视频教程
-- [Claude Code 初学者教程（Leon van Zyl）](https://www.youtube.com/watch?v=kddjxKEeCuM)
-- [Cursor 快速上手（Mikey No Code）](https://www.youtube.com/watch?v=oQDCAJnr1aY)
-- [AI Coding Tools 2026: Complete Ranking](https://www.youtube.com/watch?v=zqiYTXiQq-0)
-
-## 常见问题
-
-**Q: 我该学哪个工具？**
-A: 建议从 Cursor 或 Trae（国内用户）开始。Cursor 功能最强，Trae 国内版完全免费。熟练后再尝试其他工具。
-
-**Q: 需要编程基础吗？**
-A: 需要。AI 工具是辅助，不能替代编程知识。至少要懂一门语言和基本开发流程。
-
-**Q: 免费版够用吗？**
-A: 看情况。轻度学习可以，日常开发建议付费版。$20/月对提升效率来说很值。
-
-**Q: AI 会取代程序员吗？**
-A: 不会。但不会用 AI 的程序员会处于劣势。AI 是工具，让你更高效，不是替代你。
-
-**Q: 需要多长时间掌握？**
-A: 基本使用 1-2 小时，熟练需要 1-2 周实践。关键是多用，积累经验。
-
-## 学习建议
-
-### 第一周：熟悉工具
-- 安装配置（2 小时）
-- 基本功能（3 小时）
-- 在小项目上试试（5 小时）
-
-### 第二周：深入实践
-- 在真实项目使用
-- 学习高级功能
-- 配置和优化
-
-### 第三-四周：建立工作流
-- 总结有效 Prompt
-- 建立配置文件
-- 形成习惯
-
-### 持续改进
-- 定期反思效率
-- 关注工具更新
-- 分享团队经验
-
-## 接下来
-
-选择一个起点：
-
-**🚀 快速开始**
-→ [开发环境搭建](/agent-ecosystem/06-ai-coding-tools/05-environment-setup)
-
-**📖 系统学习**
-→ [Cursor 编辑器](/agent-ecosystem/06-ai-coding-tools/01-cursor)
-
-**🔍 先了解全景**
-→ [其他 AI 编程工具](/agent-ecosystem/06-ai-coding-tools/03-other-tools)（国产 IDE、CLI 代理、Vibe Coding 等）
-
-**💡 学习方法**
-→ [最佳实践](/agent-ecosystem/06-ai-coding-tools/04-best-practices)
+- [ ] 说出 Cursor、Claude Code、Windsurf、Codex、Kiro、Trae 各自的核心优势
+- [ ] 根据预算和场景选择合适的工具组合
+- [ ] 配置至少一个 AI 编程工具并投入实际项目
+- [ ] 理解 Harness Engineering 的核心思想：给模型造缰绳
+- [ ] 用 AI 工具从零搭建一个完整的 Web 应用
+- [ ] 掌握"Cursor 做手、Claude Code 做脑、Codex 做腿"的分工策略
 
 ---
 

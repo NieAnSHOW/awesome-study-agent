@@ -75,6 +75,7 @@ export default withMermaid(defineConfig({
           { text: 'RAG 技术', link: '/ai-basics/05-rag-knowledge/' },
           { text: '模型训练', link: '/ai-basics/08-model-training/' },
           { text: '多模态 AI 技术', link: '/ai-basics/13-multimodal-ai/' },
+          { text: 'DeepSeek 与国产大模型', link: '/ai-basics/20-domestic-llm/' },
         ]
       },
       {
@@ -86,11 +87,17 @@ export default withMermaid(defineConfig({
           { text: 'Claude 设计', link: '/agent-ecosystem/07-agent-ecosystem/09-claude-design' },
           { text: 'Pencil 设计', link: '/agent-ecosystem/07-agent-ecosystem/10-pencil-intro' },
           { text: 'DeerFlow', link: '/agent-ecosystem/07-agent-ecosystem/12-deerflow-overview' },
+          { text: 'pi-coding-agent', link: '/agent-ecosystem/07-agent-ecosystem/14-pi-coding-agent-overview' },
+          { text: 'A2UI', link: '/agent-ecosystem/07-agent-ecosystem/16-a2ui-overview' },
           { text: 'Agent Skills', link: '/agent-ecosystem/09-agent-skills/' },
           { text: 'OpenClaw', link: '/agent-ecosystem/10-openclaw/' },
           { text: 'WorkBuddy', link: '/agent-ecosystem/11-workbuddy/' },
           { text: 'AI 视频生成', link: '/agent-ecosystem/12-ai-video-generation/' },
           { text: 'AI 图像生成', link: '/agent-ecosystem/14-ai-image-generation/' },
+          { text: 'AI 音频生成', link: '/agent-ecosystem/16-ai-audio-generation/' },
+          { text: 'AI 搜索', link: '/agent-ecosystem/17-ai-search-knowledge/' },
+          { text: '零代码 Agent 构建', link: '/agent-ecosystem/18-nocode-agent-building/' },
+          { text: '自动化工作流', link: '/agent-ecosystem/21-ai-automation-workflow/' },
         ]
       },
       {
@@ -105,6 +112,7 @@ export default withMermaid(defineConfig({
           { text: 'Agent Skills 系统', link: '/deep-dive/agent-skills/' },
           { text: '大模型上下文管理', link: '/deep-dive/context-management/' },
           { text: 'OpenClaw 深度指南', link: '/deep-dive/openclaw/' },
+          { text: 'DeepSeek V4 深度指南', link: '/deep-dive/deepseek-v4/' },
         ]
       },
       {
@@ -213,6 +221,19 @@ export default withMermaid(defineConfig({
                   { text: 'Agent 集成实践', link: '13-multimodal-ai/06-agent-integration' },
                 ]
               },
+              {
+                text: 'DeepSeek 与国产大模型',
+                collapsed: true,
+                items: [
+                  { text: '模块介绍', link: '20-domestic-llm/' },
+                  { text: '国产大模型崛起背景', link: '20-domestic-llm/01-overview' },
+                  { text: 'DeepSeek 深度解析', link: '20-domestic-llm/02-deepseek' },
+                  { text: '通义千问与 Qwen 生态', link: '20-domestic-llm/03-qwen' },
+                  { text: '豆包与字节 AI 矩阵', link: '20-domestic-llm/04-doubao' },
+                  { text: 'Kimi 与其他国产模型', link: '20-domestic-llm/05-kimi-others' },
+                  { text: '选型指南', link: '20-domestic-llm/06-model-selection' },
+                ]
+              },
             ]
           }
         ]
@@ -228,12 +249,14 @@ export default withMermaid(defineConfig({
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '06-ai-coding-tools/' },
-                  { text: 'Cursor 编辑器', link: '06-ai-coding-tools/01-cursor' },
-                  { text: 'Claude Code', link: '06-ai-coding-tools/02-claude-code' },
-                  { text: '其他 AI 编程工具', link: '06-ai-coding-tools/03-other-tools' },
-                  { text: '最佳实践', link: '06-ai-coding-tools/04-best-practices' },
-                  { text: '开发环境搭建', link: '06-ai-coding-tools/05-environment-setup' },
-                  { text: 'CC Switch 配置管理', link: '06-ai-coding-tools/06-cc-switch' },
+                  { text: 'AI 编程概述与趋势', link: '06-ai-coding-tools/01-cursor' },
+                  { text: 'Cursor 深度使用', link: '06-ai-coding-tools/01-cursor' },
+                  { text: 'Claude Code 深度使用', link: '06-ai-coding-tools/02-claude-code' },
+                  { text: 'Windsurf/Antigravity', link: '06-ai-coding-tools/03-other-tools' },
+                  { text: 'OpenAI Codex 与 Kiro', link: '06-ai-coding-tools/04-best-practices' },
+                  { text: 'Trae 与国内编程工具', link: '06-ai-coding-tools/05-environment-setup' },
+                  { text: '工具组合与最佳实践', link: '06-ai-coding-tools/06-cc-switch' },
+                  { text: '从零搭建实战', link: '06-ai-coding-tools/07-full-project-practice' },
                 ]
               },
               {
@@ -278,6 +301,22 @@ export default withMermaid(defineConfig({
                 items: [
                   { text: 'DeerFlow 概述', link: '07-agent-ecosystem/12-deerflow-overview' },
                   { text: 'DeerFlow 实战部署', link: '07-agent-ecosystem/13-deerflow-deploy' },
+                ]
+              },
+              {
+                text: 'pi-coding-agent',
+                collapsed: true,
+                items: [
+                  { text: 'pi-coding-agent 概述', link: '07-agent-ecosystem/14-pi-coding-agent-overview' },
+                  { text: 'pi-coding-agent 实战', link: '07-agent-ecosystem/15-pi-coding-agent-deploy' },
+                ]
+              },
+              {
+                text: 'A2UI',
+                collapsed: true,
+                items: [
+                  { text: 'A2UI 概述', link: '07-agent-ecosystem/16-a2ui-overview' },
+                  { text: 'A2UI 实战', link: '07-agent-ecosystem/17-a2ui-deploy' },
                 ]
               },
               {
@@ -341,6 +380,58 @@ export default withMermaid(defineConfig({
                   { text: '中国 AI 绘画平台', link: '14-ai-image-generation/04-china-platforms' },
                   { text: '提示词工程与创作', link: '14-ai-image-generation/05-prompt-and-creation' },
                   { text: '商业应用与案例', link: '14-ai-image-generation/06-business-cases' },
+                ]
+              },
+              {
+                text: 'AI 音频与音乐生成',
+                collapsed: true,
+                items: [
+                  { text: '模块介绍', link: '16-ai-audio-generation/' },
+                  { text: 'AI 音频概述', link: '16-ai-audio-generation/01-overview' },
+                  { text: '文本转语音', link: '16-ai-audio-generation/02-tts' },
+                  { text: 'AI 音乐生成', link: '16-ai-audio-generation/03-music-generation' },
+                  { text: '声音克隆与音效', link: '16-ai-audio-generation/04-voice-clone' },
+                  { text: '商业应用场景', link: '16-ai-audio-generation/05-business-application' },
+                  { text: '工具横评与选型', link: '16-ai-audio-generation/06-tool-comparison' },
+                ]
+              },
+              {
+                text: 'AI 搜索与知识获取',
+                collapsed: true,
+                items: [
+                  { text: '模块介绍', link: '17-ai-search-knowledge/' },
+                  { text: 'AI 搜索概述', link: '17-ai-search-knowledge/01-overview' },
+                  { text: 'Perplexity', link: '17-ai-search-knowledge/02-perplexity' },
+                  { text: '国内 AI 搜索工具', link: '17-ai-search-knowledge/03-china-search-tools' },
+                  { text: 'Deep Research', link: '17-ai-search-knowledge/04-deep-research' },
+                  { text: '搜索方法论', link: '17-ai-search-knowledge/05-search-methodology' },
+                  { text: '工具横评与选型', link: '17-ai-search-knowledge/06-tool-comparison' },
+                ]
+              },
+              {
+                text: '零代码 Agent 构建',
+                collapsed: true,
+                items: [
+                  { text: '模块介绍', link: '18-nocode-agent-building/' },
+                  { text: '零代码 Agent 构建概述', link: '18-nocode-agent-building/01-overview' },
+                  { text: 'Coze（扣子）上手', link: '18-nocode-agent-building/02-coze' },
+                  { text: 'Dify 平台实践', link: '18-nocode-agent-building/03-dify' },
+                  { text: '知识库与工作流编排', link: '18-nocode-agent-building/04-knowledge-workflow' },
+                  { text: '插件与工具调用', link: '18-nocode-agent-building/05-plugins-tools' },
+                  { text: '从想法到上线的完整案例', link: '18-nocode-agent-building/06-full-case' },
+                ]
+              },
+              {
+                text: 'AI 自动化工作流',
+                collapsed: true,
+                items: [
+                  { text: '模块介绍', link: '21-ai-automation-workflow/' },
+                  { text: '自动化工作流概述', link: '21-ai-automation-workflow/01-overview' },
+                  { text: 'Zapier 与 AI 自动化', link: '21-ai-automation-workflow/02-zapier' },
+                  { text: 'n8n + AI 实践', link: '21-ai-automation-workflow/03-n8n' },
+                  { text: 'Make + AI 工作流', link: '21-ai-automation-workflow/04-make' },
+                  { text: '流水线设计方法论', link: '21-ai-automation-workflow/05-pipeline-design' },
+                  { text: '搭建个人 AI 工作站', link: '21-ai-automation-workflow/06-personal-workstation' },
                 ]
               },
             ]
@@ -415,6 +506,27 @@ export default withMermaid(defineConfig({
                   { text: '十二、Live Canvas 与 A2UI 协议', link: 'openclaw/12-live-canvas-a2ui' },
                   { text: '十三、生态对比与混合架构决策', link: 'openclaw/13-ecosystem-comparison' },
                   { text: '十四、实战案例与场景最佳实践', link: 'openclaw/14-scenarios-cases' },
+                ]
+              },
+              {
+                text: 'DeepSeek V4 深度指南',
+                collapsed: true,
+                items: [
+                  { text: '本指南主页', link: 'deepseek-v4/' },
+                  { text: '一、概览与战略定位', link: 'deepseek-v4/01-overview-strategy' },
+                  { text: '二、MoE 架构深度剖析', link: 'deepseek-v4/02-moe-architecture' },
+                  { text: '三、CSA + HCA 混合注意力', link: 'deepseek-v4/03-csa-hca-attention' },
+                  { text: '四、mHC 超连接与 Muon 优化器', link: 'deepseek-v4/04-mhc-muon-optimizer' },
+                  { text: '五、预训练：从 32T tokens 到 Base 模型', link: 'deepseek-v4/05-pretraining' },
+                  { text: '六、后训练：OPD 与 GRM', link: 'deepseek-v4/06-post-training' },
+                  { text: '七、全面 Benchmark 评测', link: 'deepseek-v4/07-benchmark-evaluation' },
+                  { text: '八、长上下文与 Agent 能力', link: 'deepseek-v4/08-long-context-agent' },
+                  { text: '九、定价经济学与成本优化', link: 'deepseek-v4/09-pricing-economics' },
+                  { text: '十、API 接入与开发实践', link: 'deepseek-v4/10-api-integration' },
+                  { text: '十一、本地部署方案', link: 'deepseek-v4/11-local-deployment' },
+                  { text: '十二、国产算力适配实战', link: 'deepseek-v4/12-domestic-chips' },
+                  { text: '十三、全球大模型全景对比', link: 'deepseek-v4/13-global-comparison' },
+                  { text: '十四、开源生态与未来趋势', link: 'deepseek-v4/14-ecosystem-future' },
                 ]
               },
             ]

@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "从零到一"
   text: "系统掌握 AI Agent"
-  tagline: 15 个基础模块 + 3 个深度指南 + 6 个附录 · 共 154 篇文档<br>从零到一，一个人就是一个团队。<br><p style="display:flex;align-items:center;justify-content:left;margin-top:8px;">本知识库由 <img src="/deepseek.svg" style="width:1em;height:1em;margin-right:0.3em;margin-left:0.3em;"> <a href="https://api-docs.deepseek.com/zh-cn/" target="_blank" style="color:#4D6BFE;text-decoration:underline;text-decoration-style:dotted;">DeepSeek V4 模型</a><span style="margin-left:5px">撰写</span></p>
+  tagline: 20 个基础模块 + 3 个深度指南 + 6 个附录 · 共 186 篇文档<br>从零到一，一个人就是一个团队。<br><span style="display:flex;align-items:center;justify-content:left;margin-top:8px;">本知识库由 <img src="/deepseek.svg" style="width:1em;height:1em;margin-right:0.3em;margin-left:0.3em;"> <a href="https://api-docs.deepseek.com/zh-cn/" target="_blank" style="color:#4D6BFE;text-decoration:underline;text-decoration-style:dotted;">DeepSeek V4 模型</a><span style="margin-left:5px">撰写</span></span>
   image:
     src: /logo.png
     alt: Awesome Study Agent Logo
@@ -38,7 +38,7 @@ features:
     link: /ai-basics/05-rag-knowledge/
     linkText: 学习 RAG
   - title: 💻 AI 编程工具
-    details: Cursor 更适合做产品原型，Claude Code 更适合做复杂工程。CC Switch 是配置管理利器。
+    details: Cursor、Claude Code、Windsurf、Codex、Kiro、Trae——2026 年 AI 编程工具格局已大变，全面对比帮你选对工具。
     link: /agent-ecosystem/06-ai-coding-tools/
     linkText: 工具入门
   - title: 🔗 Agent 生态与协议
@@ -77,6 +77,31 @@ features:
     details: Obsidian、Logseq、MarkText——工具是手段不是目的，选一个建立自己的 AI 学习知识库。
     link: /tools-recommendation/15-markdown-reading-tools/
     linkText: 了解工具
+
+  - title: 🎵 AI 音频与音乐生成
+    details: Suno、ElevenLabs、Boomy——文本转语音、AI 作曲、声音克隆。从"看文字"到"能听能说"。
+    link: /agent-ecosystem/16-ai-audio-generation/
+    linkText: 学习音频生成
+
+  - title: 🔍 AI 搜索与知识获取
+    details: Perplexity、秘塔AI搜索、Deep Research——新一代搜索不是"找链接"，是"直接给答案"。
+    link: /agent-ecosystem/17-ai-search-knowledge/
+    linkText: 学习 AI 搜索
+
+  - title: 🧪 零代码 Agent 构建
+    details: Coze、Dify、FastGPT——不写代码也能搭 Agent。配置知识库、编排工作流、一键部署。
+    link: /agent-ecosystem/18-nocode-agent-building/
+    linkText: 搭建 Agent
+
+  - title: 🇨🇳 DeepSeek 与国产大模型
+    details: DeepSeek V4/R1、通义千问、豆包、Kimi——国产模型已是学习者的主流选择，不是备选方案。
+    link: /ai-basics/20-domestic-llm/
+    linkText: 了解国产模型
+
+  - title: ⚡ AI 自动化工作流
+    details: Zapier、n8n、Make——把零散的 AI 能力串成流水线。整个基础模块的毕业课。
+    link: /agent-ecosystem/21-ai-automation-workflow/
+    linkText: 搭建工作流
   - title: 📘 深度指南
     details: Agent Skills 系统、大模型上下文管理、OpenClaw 架构——每个专题 14 篇文章的深度剖析。
     link: /deep-dive/context-management/
@@ -102,7 +127,7 @@ features:
 
 ---
 
-> **154 篇文档 · 15 个模块 · 3 个深度专题 · 6 个附录**  
+> **186 篇文档 · 20 个模块 · 3 个深度专题 · 6 个附录**  
 > 每个模块有"检验标准"，过不了别急着往下走——不是考试，是你真的听懂了。
 
 [查看完整课程大纲 →](preface)

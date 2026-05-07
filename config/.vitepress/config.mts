@@ -93,6 +93,7 @@ export default withMermaid(defineConfig({
           { text: 'WorkBuddy', link: '/agent-ecosystem/11-workbuddy/' },
           { text: 'AI 视频生成', link: '/agent-ecosystem/12-ai-video-generation/' },
           { text: 'AI 图像生成', link: '/agent-ecosystem/14-ai-image-generation/' },
+          { text: '零代码 Agent 构建', link: '/agent-ecosystem/18-nocode-agent-building/' },
         ]
       },
       {
@@ -359,6 +360,19 @@ export default withMermaid(defineConfig({
                   { text: '中国 AI 绘画平台', link: '14-ai-image-generation/04-china-platforms' },
                   { text: '提示词工程与创作', link: '14-ai-image-generation/05-prompt-and-creation' },
                   { text: '商业应用与案例', link: '14-ai-image-generation/06-business-cases' },
+                ]
+              },
+              {
+                text: '零代码 Agent 构建',
+                collapsed: true,
+                items: [
+                  { text: '模块介绍', link: '18-nocode-agent-building/' },
+                  { text: '零代码 Agent 构建概述', link: '18-nocode-agent-building/01-overview' },
+                  { text: 'Coze（扣子）上手', link: '18-nocode-agent-building/02-coze' },
+                  { text: 'Dify 平台实践', link: '18-nocode-agent-building/03-dify' },
+                  { text: '知识库与工作流编排', link: '18-nocode-agent-building/04-knowledge-workflow' },
+                  { text: '插件与工具调用', link: '18-nocode-agent-building/05-plugins-tools' },
+                  { text: '从想法到上线的完整案例', link: '18-nocode-agent-building/06-full-case' },
                 ]
               },
             ]

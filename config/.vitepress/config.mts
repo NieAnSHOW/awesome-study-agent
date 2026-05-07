@@ -94,7 +94,10 @@ export default withMermaid(defineConfig({
           { text: 'WorkBuddy', link: '/agent-ecosystem/11-workbuddy/' },
           { text: 'AI 视频生成', link: '/agent-ecosystem/12-ai-video-generation/' },
           { text: 'AI 图像生成', link: '/agent-ecosystem/14-ai-image-generation/' },
+          { text: 'AI 音频生成', link: '/agent-ecosystem/16-ai-audio-generation/' },
+          { text: 'AI 搜索', link: '/agent-ecosystem/17-ai-search-knowledge/' },
           { text: '零代码 Agent 构建', link: '/agent-ecosystem/18-nocode-agent-building/' },
+          { text: '自动化工作流', link: '/agent-ecosystem/21-ai-automation-workflow/' },
         ]
       },
       {
@@ -245,12 +248,14 @@ export default withMermaid(defineConfig({
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '06-ai-coding-tools/' },
-                  { text: 'Cursor 编辑器', link: '06-ai-coding-tools/01-cursor' },
-                  { text: 'Claude Code', link: '06-ai-coding-tools/02-claude-code' },
-                  { text: '其他 AI 编程工具', link: '06-ai-coding-tools/03-other-tools' },
-                  { text: '最佳实践', link: '06-ai-coding-tools/04-best-practices' },
-                  { text: '开发环境搭建', link: '06-ai-coding-tools/05-environment-setup' },
-                  { text: 'CC Switch 配置管理', link: '06-ai-coding-tools/06-cc-switch' },
+                  { text: 'AI 编程概述与趋势', link: '06-ai-coding-tools/01-cursor' },
+                  { text: 'Cursor 深度使用', link: '06-ai-coding-tools/01-cursor' },
+                  { text: 'Claude Code 深度使用', link: '06-ai-coding-tools/02-claude-code' },
+                  { text: 'Windsurf/Antigravity', link: '06-ai-coding-tools/03-other-tools' },
+                  { text: 'OpenAI Codex 与 Kiro', link: '06-ai-coding-tools/04-best-practices' },
+                  { text: 'Trae 与国内编程工具', link: '06-ai-coding-tools/05-environment-setup' },
+                  { text: '工具组合与最佳实践', link: '06-ai-coding-tools/06-cc-switch' },
+                  { text: '从零搭建实战', link: '06-ai-coding-tools/07-full-project-practice' },
                 ]
               },
               {
@@ -377,6 +382,32 @@ export default withMermaid(defineConfig({
                 ]
               },
               {
+                text: 'AI 音频与音乐生成',
+                collapsed: true,
+                items: [
+                  { text: '模块介绍', link: '16-ai-audio-generation/' },
+                  { text: 'AI 音频概述', link: '16-ai-audio-generation/01-overview' },
+                  { text: '文本转语音', link: '16-ai-audio-generation/02-tts' },
+                  { text: 'AI 音乐生成', link: '16-ai-audio-generation/03-music-generation' },
+                  { text: '声音克隆与音效', link: '16-ai-audio-generation/04-voice-clone' },
+                  { text: '商业应用场景', link: '16-ai-audio-generation/05-business-application' },
+                  { text: '工具横评与选型', link: '16-ai-audio-generation/06-tool-comparison' },
+                ]
+              },
+              {
+                text: 'AI 搜索与知识获取',
+                collapsed: true,
+                items: [
+                  { text: '模块介绍', link: '17-ai-search-knowledge/' },
+                  { text: 'AI 搜索概述', link: '17-ai-search-knowledge/01-overview' },
+                  { text: 'Perplexity', link: '17-ai-search-knowledge/02-perplexity' },
+                  { text: '国内 AI 搜索工具', link: '17-ai-search-knowledge/03-china-search-tools' },
+                  { text: 'Deep Research', link: '17-ai-search-knowledge/04-deep-research' },
+                  { text: '搜索方法论', link: '17-ai-search-knowledge/05-search-methodology' },
+                  { text: '工具横评与选型', link: '17-ai-search-knowledge/06-tool-comparison' },
+                ]
+              },
+              {
                 text: '零代码 Agent 构建',
                 collapsed: true,
                 items: [
@@ -387,6 +418,19 @@ export default withMermaid(defineConfig({
                   { text: '知识库与工作流编排', link: '18-nocode-agent-building/04-knowledge-workflow' },
                   { text: '插件与工具调用', link: '18-nocode-agent-building/05-plugins-tools' },
                   { text: '从想法到上线的完整案例', link: '18-nocode-agent-building/06-full-case' },
+                ]
+              },
+              {
+                text: 'AI 自动化工作流',
+                collapsed: true,
+                items: [
+                  { text: '模块介绍', link: '21-ai-automation-workflow/' },
+                  { text: '自动化工作流概述', link: '21-ai-automation-workflow/01-overview' },
+                  { text: 'Zapier 与 AI 自动化', link: '21-ai-automation-workflow/02-zapier' },
+                  { text: 'n8n + AI 实践', link: '21-ai-automation-workflow/03-n8n' },
+                  { text: 'Make + AI 工作流', link: '21-ai-automation-workflow/04-make' },
+                  { text: '流水线设计方法论', link: '21-ai-automation-workflow/05-pipeline-design' },
+                  { text: '搭建个人 AI 工作站', link: '21-ai-automation-workflow/06-personal-workstation' },
                 ]
               },
             ]

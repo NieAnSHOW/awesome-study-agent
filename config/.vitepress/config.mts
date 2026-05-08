@@ -113,6 +113,16 @@ export default withMermaid(defineConfig({
           { text: '大模型上下文管理', link: '/deep-dive/context-management/' },
           { text: 'OpenClaw 深度指南', link: '/deep-dive/openclaw/' },
           { text: 'DeepSeek V4 深度指南', link: '/deep-dive/deepseek-v4/' },
+          { text: 'OPC 一人公司深度指南', link: '/deep-dive/opc/' },
+        ]
+      },
+      {
+        text: '公众号精选',
+        items: [
+          { text: '专栏首页', link: '/column/' },
+          { text: 'AI Agent 精选', link: '/column/01-ai-agent-picks/' },
+          { text: '独立开发实战', link: '/column/02-indie-hacking/' },
+          { text: '工具与效率思考', link: '/column/03-tools-thoughts/' },
         ]
       },
       {
@@ -529,6 +539,27 @@ export default withMermaid(defineConfig({
                   { text: '十四、开源生态与未来趋势', link: 'deepseek-v4/14-ecosystem-future' },
                 ]
               },
+              {
+                text: 'OPC 一人公司深度指南',
+                collapsed: true,
+                items: [
+                  { text: '本指南主页', link: 'opc/' },
+                  { text: '一、范式跃迁：为什么 OPC 在 2026 年爆发', link: 'opc/01-paradigm-shift' },
+                  { text: '二、OPC 能力模型', link: 'opc/02-capability-model' },
+                  { text: '三、需求洞察', link: 'opc/03-demand-insight' },
+                  { text: '四、AI 编程工作流', link: 'opc/04-ai-coding-workflow' },
+                  { text: '五、一人公司技术架构', link: 'opc/05-tech-stack' },
+                  { text: '六、AI Agent 与自动化运营', link: 'opc/06-ai-agent-automation' },
+                  { text: '七、数据驱动决策', link: 'opc/07-data-driven-decision' },
+                  { text: '八、Build in Public', link: 'opc/08-build-in-public' },
+                  { text: '九、增长策略', link: 'opc/09-growth-strategy' },
+                  { text: '十、品牌与变现', link: 'opc/10-brand-monetization' },
+                  { text: '十一、商业模式与收入设计', link: 'opc/11-business-model' },
+                  { text: '十二、财务与法务', link: 'opc/12-legal-finance' },
+                  { text: '十三、心理建设', link: 'opc/13-mental-health' },
+                  { text: '十四、OPC 进化论', link: 'opc/14-evolution' },
+                ]
+              },
             ]
           }
         ]
@@ -567,6 +598,38 @@ export default withMermaid(defineConfig({
                   { text: 'Joplin', link: '15-markdown-reading-tools/04-joplin' },
                   { text: 'Zettlr', link: '15-markdown-reading-tools/05-zettlr' },
                   { text: '横向对比与选型', link: '15-markdown-reading-tools/06-comparison' },
+                ]
+              },
+            ]
+          }
+        ]
+      },
+      '/column/': {
+        base: '/column/',
+        items: [
+          {
+            text: '公众号精选',
+            items: [
+              {
+                text: 'AI Agent 精选',
+                collapsed: true,
+                items: [
+                  { text: '模块介绍', link: '01-ai-agent-picks/' },
+                  { text: 'OpenCove 空间化工作台', link: '01-ai-agent-picks/opencove-spatial-workspace' },
+                ]
+              },
+              {
+                text: '独立开发实战',
+                collapsed: true,
+                items: [
+                  { text: '模块介绍', link: '02-indie-hacking/' },
+                ]
+              },
+              {
+                text: '工具与效率思考',
+                collapsed: true,
+                items: [
+                  { text: '模块介绍', link: '03-tools-thoughts/' },
                 ]
               },
             ]

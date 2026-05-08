@@ -117,6 +117,15 @@ export default withMermaid(defineConfig({
         ]
       },
       {
+        text: '公众号精选',
+        items: [
+          { text: '专栏首页', link: '/column/' },
+          { text: 'AI Agent 精选', link: '/column/01-ai-agent-picks/' },
+          { text: '独立开发实战', link: '/column/02-indie-hacking/' },
+          { text: '工具与效率思考', link: '/column/03-tools-thoughts/' },
+        ]
+      },
+      {
         text: '附录',
         items: [
           { text: '术语表', link: '/appendix/glossary' },
@@ -589,6 +598,37 @@ export default withMermaid(defineConfig({
                   { text: 'Joplin', link: '15-markdown-reading-tools/04-joplin' },
                   { text: 'Zettlr', link: '15-markdown-reading-tools/05-zettlr' },
                   { text: '横向对比与选型', link: '15-markdown-reading-tools/06-comparison' },
+                ]
+              },
+            ]
+          }
+        ]
+      },
+      '/column/': {
+        base: '/column/',
+        items: [
+          {
+            text: '公众号精选',
+            items: [
+              {
+                text: 'AI Agent 精选',
+                collapsed: true,
+                items: [
+                  { text: '模块介绍', link: '01-ai-agent-picks/' },
+                ]
+              },
+              {
+                text: '独立开发实战',
+                collapsed: true,
+                items: [
+                  { text: '模块介绍', link: '02-indie-hacking/' },
+                ]
+              },
+              {
+                text: '工具与效率思考',
+                collapsed: true,
+                items: [
+                  { text: '模块介绍', link: '03-tools-thoughts/' },
                 ]
               },
             ]

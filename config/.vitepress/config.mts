@@ -615,6 +615,7 @@ export default withMermaid(defineConfig({
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '01-ai-agent-picks/' },
+                  { text: 'OpenCove 空间化工作台', link: '01-ai-agent-picks/opencove-spatial-workspace' },
                 ]
               },
               {

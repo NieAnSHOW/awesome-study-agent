@@ -615,7 +615,13 @@ export default withMermaid(defineConfig({
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '01-ai-agent-picks/' },
+                  { text: 'Claude Mythos 16h 自主作战', link: '01-ai-agent-picks/claude-mythos-16hr-eval' },
+                  { text: '百度 ERNIE 5.1：6% 训练成本打效率战', link: '01-ai-agent-picks/baidu-ernie-5.1' },
                   { text: 'OpenCove 空间化工作台', link: '01-ai-agent-picks/opencove-spatial-workspace' },
+                  { text: 'StepAudio 2.5 TTS 盲测全球前三', link: '01-ai-agent-picks/stepaudio-2.5-tts' },
+                  { text: 'DeepSeek 融资 500 亿', link: '01-ai-agent-picks/deepseek-50b-funding' },
+                  { text: 'OpenRouter Pareto Code', link: '01-ai-agent-picks/pareto-code-router' },
+                  { text: 'AI 伦理审查先导计划启动', link: '01-ai-agent-picks/miit-ai-ethics-pilot' },
                 ]
               },
               {

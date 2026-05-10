@@ -23,6 +23,7 @@
 
 ### AI Agent 精选
 
+- [百度 ERNIE 5.1：用 6% 的训练成本，打了场什么仗](./01-ai-agent-picks/baidu-ernie-5.1.md) — 参数压缩 1/3、成本降到 6%，百度如何用工程思维打大模型效率战
 - [从黑箱到白箱：OpenCove 让 AI Agent 工作流一目了然](./01-ai-agent-picks/opencove-spatial-workspace.md) — 空间化工作台如何解决 Agent 并发场景下的上下文丢失、注意力瓶颈和过程黑箱问题
 
 ---

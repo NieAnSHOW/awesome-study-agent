@@ -23,6 +23,7 @@
 
 ### AI Agent 精选
 
+- [HappyHorse：阿里用一头「快乐小马」重新定义了 AI 视频生成](./01-ai-agent-picks/happyhorse-alibaba-ai-video.md) — 匿名登顶、音画同生、开源商用许可，阿里如何用架构级的差异化在 AI 视频赛道打出"产品化优先"的牌
 - [百度 ERNIE 5.1：用 6% 的训练成本，打了场什么仗](./01-ai-agent-picks/baidu-ernie-5.1.md) — 参数压缩 1/3、成本降到 6%，百度如何用工程思维打大模型效率战
 - [从黑箱到白箱：OpenCove 让 AI Agent 工作流一目了然](./01-ai-agent-picks/opencove-spatial-workspace.md) — 空间化工作台如何解决 Agent 并发场景下的上下文丢失、注意力瓶颈和过程黑箱问题
 

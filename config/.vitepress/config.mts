@@ -615,6 +615,7 @@ export default withMermaid(defineConfig({
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '01-ai-agent-picks/' },
+                  { text: 'HappyHorse：阿里重新定义 AI 视频生成', link: '01-ai-agent-picks/happyhorse-alibaba-ai-video' },
                   { text: 'Claude Mythos 16h 自主作战', link: '01-ai-agent-picks/claude-mythos-16hr-eval' },
                   { text: '百度 ERNIE 5.1：6% 训练成本打效率战', link: '01-ai-agent-picks/baidu-ernie-5.1' },
                   { text: 'OpenCove 空间化工作台', link: '01-ai-agent-picks/opencove-spatial-workspace' },

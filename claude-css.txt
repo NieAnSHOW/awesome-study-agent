@@ -1,0 +1,478 @@
+/**
+ * MD 主题导出 — Claude 风格
+ * 主色取自 Claude 品牌标志性的赭石橙 #D97757
+ * 整体风格：温暖、简洁、克制、高级
+ */
+
+/* ==================== 全局变量 ==================== */
+:root {
+  --md-primary-color: #D97757;
+  --md-primary-light: #F5E6DF;
+  --md-primary-ultralight: #FBF5F2;
+  --md-warm-bg: #FAF8F5;
+  --md-warm-border: rgba(217, 119, 87, 0.15);
+  --md-text-primary: #2C2420;
+  --md-text-secondary: #6B5E57;
+  --md-text-muted: #9C8E86;
+  --md-code-bg: #F7F3EF;
+  --md-code-border: rgba(0, 0, 0, 0.06);
+  --md-font-family: -apple-system-font, BlinkMacSystemFont, "Segoe UI", Helvetica Neue, PingFang SC, Hiragino Sans GB, Microsoft YaHei UI, Microsoft YaHei, Arial, sans-serif;
+  --md-font-size: 16px;
+}
+
+/* ==================== 根容器 ==================== */
+.md-container {
+  background: #FFFFFF;
+}
+
+/* ==================== 一级标题 ==================== */
+h1 {
+  display: block;
+  padding: 0.6em 0 0.5em;
+  border-bottom: 2px solid var(--md-primary-color);
+  margin: 2em auto 1.2em;
+  color: var(--md-text-primary);
+  font-size: calc(var(--md-font-size) * 1.5);
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+}
+
+/* ==================== 二级标题 ==================== */
+h2 {
+  display: block;
+  padding: 0.35em 1em;
+  margin: 2.5em auto 1.2em;
+  color: #FFFFFF;
+  background: var(--md-primary-color);
+  font-size: calc(var(--md-font-size) * 1.3);
+  font-weight: 600;
+  text-align: left;
+  border-radius: 8px;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+}
+
+/* ==================== 三级标题 ==================== */
+h3 {
+  padding: 0.3em 0 0.3em 14px;
+  border-left: 4px solid var(--md-primary-color);
+  margin: 2em 0 0.8em;
+  color: var(--md-text-primary);
+  font-size: calc(var(--md-font-size) * 1.15);
+  font-weight: 600;
+  line-height: 1.5;
+  border-radius: 0 6px 6px 0;
+  background: transparent;
+}
+
+/* ==================== 四级标题 ==================== */
+h4 {
+  margin: 1.8em 0 0.6em;
+  color: var(--md-primary-color);
+  font-size: calc(var(--md-font-size) * 1.05);
+  font-weight: 600;
+}
+
+/* ==================== 五级标题 ==================== */
+h5 {
+  margin: 1.5em 0 0.5em;
+  color: var(--md-primary-color);
+  font-size: var(--md-font-size);
+  font-weight: 600;
+}
+
+/* ==================== 六级标题 ==================== */
+h6 {
+  margin: 1.5em 0 0.5em;
+  font-size: var(--md-font-size);
+  color: var(--md-text-muted);
+  font-weight: 600;
+}
+
+/* ==================== 段落 ==================== */
+p {
+  margin: 1.2em 0;
+  letter-spacing: 0.02em;
+  color: var(--md-text-primary);
+  line-height: 1.8;
+}
+
+/* ==================== 引用块 ==================== */
+blockquote {
+  font-style: normal;
+  padding: 1em 1.2em 1em 1.5em;
+  border-left: 4px solid var(--md-primary-color);
+  border-radius: 0 10px 10px 0;
+  color: var(--md-text-secondary);
+  background: var(--md-primary-ultralight);
+  margin: 1.2em 0;
+}
+
+blockquote > p {
+  display: block;
+  font-size: 1em;
+  letter-spacing: 0.02em;
+  color: var(--md-text-secondary);
+  margin: 0;
+  line-height: 1.75;
+}
+
+/* ==================== GFM 警告块 ==================== */
+.alert-title-note,
+.alert-title-tip,
+.alert-title-info,
+.alert-title-important,
+.alert-title-warning,
+.alert-title-caution,
+.alert-title-abstract,
+.alert-title-summary,
+.alert-title-tldr,
+.alert-title-todo,
+.alert-title-success,
+.alert-title-done,
+.alert-title-question,
+.alert-title-help,
+.alert-title-faq,
+.alert-title-failure,
+.alert-title-fail,
+.alert-title-missing,
+.alert-title-danger,
+.alert-title-error,
+.alert-title-bug,
+.alert-title-example,
+.alert-title-quote,
+.alert-title-cite {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+/* Claude 风格的柔和配色 */
+.alert-title-note { color: #6B8FA8; }
+.alert-title-tip { color: #6BA87A; }
+.alert-title-info { color: #7EA8C4; }
+.alert-title-important { color: #8B6FAF; }
+.alert-title-warning { color: #B8924A; }
+.alert-title-caution { color: #C06B5E; }
+
+.alert-title-abstract,
+.alert-title-summary,
+.alert-title-tldr { color: #5EA8A8; }
+
+.alert-title-todo { color: #6B8FA8; }
+
+.alert-title-success,
+.alert-title-done { color: #6BA87A; }
+
+.alert-title-question,
+.alert-title-help,
+.alert-title-faq { color: #B8924A; }
+
+.alert-title-failure,
+.alert-title-fail,
+.alert-title-missing { color: #C06B5E; }
+
+.alert-title-danger,
+.alert-title-error { color: #C06B5E; }
+
+.alert-title-bug { color: #B86B7A; }
+
+.alert-title-example { color: #8B6FAF; }
+
+.alert-title-quote,
+.alert-title-cite { color: #9C8E86; }
+
+/* GFM Alert SVG 图标颜色 */
+.alert-icon-note { fill: #6B8FA8; }
+.alert-icon-tip { fill: #6BA87A; }
+.alert-icon-info { fill: #7EA8C4; }
+.alert-icon-important { fill: #8B6FAF; }
+.alert-icon-warning { fill: #B8924A; }
+.alert-icon-caution { fill: #C06B5E; }
+
+.alert-icon-abstract,
+.alert-icon-summary,
+.alert-icon-tldr { fill: #5EA8A8; }
+
+.alert-icon-todo { fill: #6B8FA8; }
+
+.alert-icon-success,
+.alert-icon-done { fill: #6BA87A; }
+
+.alert-icon-question,
+.alert-icon-help,
+.alert-icon-faq { fill: #B8924A; }
+
+.alert-icon-failure,
+.alert-icon-fail,
+.alert-icon-missing { fill: #C06B5E; }
+
+.alert-icon-danger,
+.alert-icon-error { fill: #C06B5E; }
+
+.alert-icon-bug { fill: #B86B7A; }
+
+.alert-icon-example { fill: #8B6FAF; }
+
+.alert-icon-quote,
+.alert-icon-cite { fill: #9C8E86; }
+
+/* ==================== 代码块 ==================== */
+pre.code__pre,
+.hljs.code__pre {
+  font-size: 90%;
+  overflow-x: auto;
+  border-radius: 10px;
+  padding: 0 !important;
+  line-height: 1.6;
+  margin: 1.2em 0;
+  border: 1px solid var(--md-code-border);
+  background: var(--md-code-bg) !important;
+}
+
+pre.code__pre > code,
+.hljs.code__pre > code {
+  display: -webkit-box;
+  padding: 1em 1.2em;
+  overflow-x: auto;
+  text-indent: 0;
+  color: var(--md-text-primary);
+  background: none;
+  white-space: nowrap;
+  margin: 0;
+  font-family: 'SF Mono', 'Fira Code', Menlo, Consolas, Monaco, monospace;
+}
+
+/* ==================== 图片 ==================== */
+img {
+  display: block;
+  max-width: 100%;
+  margin: 1.2em auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* ==================== 列表 ==================== */
+ol {
+  padding-left: 1.5em;
+  margin-left: 0;
+  color: var(--md-text-primary);
+}
+
+ul {
+  list-style: none;
+  padding-left: 1.2em;
+  margin-left: 0;
+  color: var(--md-text-primary);
+}
+
+ul li::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--md-primary-color);
+  margin-right: 0.6em;
+  margin-left: -1.2em;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+li {
+  display: block;
+  margin: 0.4em 0;
+  color: var(--md-text-primary);
+  line-height: 1.75;
+}
+
+/* ==================== 脚注 ==================== */
+p.footnotes {
+  margin: 0.5em 0;
+  font-size: 80%;
+  color: var(--md-text-muted);
+}
+
+/* ==================== 图表 ==================== */
+figure {
+  margin: 1.5em 0;
+  color: var(--md-text-primary);
+}
+
+figcaption,
+.md-figcaption {
+  text-align: center;
+  color: var(--md-text-muted);
+  font-size: 0.85em;
+  margin-top: 0.4em;
+}
+
+/* ==================== 分隔线 ==================== */
+hr {
+  border: none;
+  height: 1px;
+  margin: 2em 0;
+  background: linear-gradient(to right, transparent, var(--md-primary-color), transparent);
+  opacity: 0.3;
+}
+
+hr.hr-dash {
+  background: repeating-linear-gradient(to right, var(--md-primary-color) 0, var(--md-primary-color) 8px, transparent 8px, transparent 14px);
+  height: 1px;
+  opacity: 0.3;
+}
+
+hr.hr-star {
+  background: linear-gradient(to right, transparent, var(--md-primary-color), transparent);
+  height: 1px;
+  opacity: 0.3;
+}
+
+hr.hr-underscore {
+  background: repeating-linear-gradient(to right, var(--md-primary-color) 0, var(--md-primary-color) 8px, transparent 8px, transparent 14px);
+  height: 2px;
+  opacity: 0.2;
+}
+
+/* ==================== 行内代码 ==================== */
+code {
+  font-size: 88%;
+  color: var(--md-primary-color);
+  background: var(--md-primary-light);
+  padding: 2px 7px;
+  border-radius: 5px;
+  font-family: 'SF Mono', 'Fira Code', Menlo, Consolas, Monaco, monospace;
+}
+
+/* 代码块内 code 覆盖行内样式 */
+pre.code__pre > code,
+.hljs.code__pre > code {
+  font-size: 90%;
+  color: var(--md-text-primary);
+  background: none;
+  padding: 1em 1.2em;
+  border-radius: 0;
+}
+
+/* ==================== 强调 ==================== */
+em {
+  font-style: italic;
+  font-size: inherit;
+  color: var(--md-text-secondary);
+}
+
+/* ==================== 链接 ==================== */
+a {
+  color: var(--md-primary-color);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(217, 119, 87, 0.3);
+  transition: border-color 0.2s ease;
+}
+
+a:hover {
+  border-bottom-color: var(--md-primary-color);
+}
+
+/* ==================== 粗体 ==================== */
+strong {
+  color: var(--md-text-primary);
+  font-weight: 700;
+  font-size: inherit;
+}
+
+/* ==================== 表格 ==================== */
+table {
+  color: var(--md-text-primary);
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--md-warm-border);
+  width: 100%;
+  margin: 1.2em 0;
+}
+
+thead {
+  font-weight: 600;
+  color: var(--md-text-primary);
+}
+
+th {
+  border: none;
+  border-bottom: 2px solid var(--md-primary-color);
+  padding: 0.6em 1em;
+  color: var(--md-text-primary);
+  word-break: keep-all;
+  background: var(--md-primary-ultralight);
+  text-align: left;
+  font-size: 0.95em;
+}
+
+td {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 0.5em 1em;
+  color: var(--md-text-primary);
+  word-break: keep-all;
+  font-size: 0.95em;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover td {
+  background: var(--md-primary-ultralight);
+}
+
+/* ==================== KaTeX 公式 ==================== */
+.katex-inline {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.katex-block {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.8em 0;
+  text-align: center;
+}
+
+/* ==================== 标记高亮 ==================== */
+.markup-highlight {
+  background-color: var(--md-primary-light);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: var(--md-primary-color);
+  font-weight: 500;
+}
+
+.markup-underline {
+  text-decoration: underline;
+  text-decoration-color: var(--md-primary-color);
+  text-underline-offset: 3px;
+}
+
+.markup-wavyline {
+  text-decoration: underline wavy;
+  text-decoration-color: var(--md-primary-color);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+
+/* ==================== GFM Alert 容器 ==================== */
+.markdown-alert-note,
+.markdown-alert-tip,
+.markdown-alert-info,
+.markdown-alert-important,
+.markdown-alert-warning,
+.markdown-alert-caution {
+  border-radius: 10px;
+  font-style: normal;
+}

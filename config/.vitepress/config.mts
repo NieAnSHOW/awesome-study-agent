@@ -623,6 +623,8 @@ export default withMermaid(defineConfig({
                   { text: 'StepAudio 2.5 TTS 盲测全球前三', link: '01-ai-agent-picks/stepaudio-2.5-tts' },
                   { text: 'DeepSeek 融资 500 亿', link: '01-ai-agent-picks/deepseek-50b-funding' },
                   { text: 'OpenRouter Pareto Code', link: '01-ai-agent-picks/pareto-code-router' },
+                  { text: 'ChatGPT 被诉"教唆杀人"', link: '01-ai-agent-picks/chatgpt-fsu-shooting-lawsuit' },
+                  { text: 'Claude Code Agent View', link: '01-ai-agent-picks/claude-code-agent-view' },
                   { text: 'AI 伦理审查先导计划启动', link: '01-ai-agent-picks/miit-ai-ethics-pilot' },
                 ]
               },

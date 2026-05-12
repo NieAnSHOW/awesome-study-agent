@@ -12,4 +12,6 @@
 - [OpenCove：让 AI Agent 从黑箱变成白箱的空间化工作台](./opencove-spatial-workspace) — 用无限画布打破 Agent 工作流的黑箱，让 Claude Code、终端、任务同屏可见
 - [StepAudio 2.5 TTS：盲测全球前三，中国语音模型第一次站上这个位置](./stepaudio-2.5-tts) — 语境感知语音合成，3秒克隆音色，用自然语言控制情绪——TTS从念稿子到表演
 - [OpenRouter Pareto Code：一个参数解决「选模型焦虑症」](./pareto-code-router) — 不选模型、设阈值，一个 min_coding_score 让 AI 自动挑选当前最强的编码模型——路由层正在变成 AI 基础设施的关键组件
+- [ChatGPT 被起诉"教唆杀人"：2026 年 AI 行业最大的那只黑天鹅](./chatgpt-fsu-shooting-lawsuit) — 佛州总检察长启动首次 AI 刑事调查，受害者家属正式起诉 OpenAI。如果屏幕另一端是真人，检方说会以谋杀罪起诉
+- [一个视图管理所有 Agent 会话，Claude Code 的"智能体视图"在解决什么真问题？](./claude-code-agent-view) — 当 Agent 能独立工作时，用户和工具的关系就从"对话"变成了"协作"。Agent View 解决了并发会话管理的认知负担问题
 - [工信部 AI 伦理审查先导计划启动：做 AI 产品的人，该关心什么](./miit-ai-ethics-pilot) — 10 省份、9 领域、20+ 家企业、5 项以上标准——工信部 AI 伦理审查从纸面到地面，独立开发者现在该做什么

@@ -615,6 +615,7 @@ export default withMermaid(defineConfig({
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '01-ai-agent-picks/' },
+                  { text: 'Codex Chrome 扩展', link: '01-ai-agent-picks/codex-chrome-extension' },
                   { text: '福耀科大新增 5 个新专业', link: '01-ai-agent-picks/fuyao-university-5-new-majors' },
                   { text: 'HappyHorse：阿里重新定义 AI 视频生成', link: '01-ai-agent-picks/happyhorse-alibaba-ai-video' },
                   { text: 'Claude Mythos 16h 自主作战', link: '01-ai-agent-picks/claude-mythos-16hr-eval' },
@@ -626,6 +627,9 @@ export default withMermaid(defineConfig({
                   { text: 'ChatGPT 被诉"教唆杀人"', link: '01-ai-agent-picks/chatgpt-fsu-shooting-lawsuit' },
                   { text: 'Claude Code Agent View', link: '01-ai-agent-picks/claude-code-agent-view' },
                   { text: 'AI 伦理审查先导计划启动', link: '01-ai-agent-picks/miit-ai-ethics-pilot' },
+                  { text: '宇树 GD01 载人变形机甲', link: '01-ai-agent-picks/unitree-gd01-mecha' },
+                  { text: 'Codex Computer Use', link: '01-ai-agent-picks/openai-codex-computer-use' },
+                  { text: '吴恩达：AI 就业狂欢', link: '01-ai-agent-picks/andrew-ng-ai-jobapalooza' },
                 ]
               },
               {

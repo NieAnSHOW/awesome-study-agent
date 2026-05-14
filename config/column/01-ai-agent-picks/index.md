@@ -4,6 +4,8 @@
 
 ## 文章列表
 
+- [MiMo V2.5 Pro 登顶 DesignArena 开源前三](./mimo-v2.5-pro-designarena-top3) — 小米的大模型在前端编码上追平 Claude Sonnet 4.6，开源第三，MIT 协议，Token 效率高 40-60%。手机厂造的大模型，为什么让硅谷坐不住了
+- [AI Native 时代，研发组织何去何从？](./ai-native-rd-organization) — 工程师写代码时间从 30% 降到 5%，编码效率 10 倍但交付只提升 2 到 3 倍。当 AI 能写代码之后，研发组织到底是为什么存在的？
 - [Codex 钻进浏览器了：400 万周活用户、8 倍增长，OpenAI 在布什么局？](./codex-chrome-extension) — Chrome 扩展让 AI Agent 直接用你的登录态操作网站，后台并行，不抢浏览器。三层工具体系 + 逐站授权，Codex 在做一件更大的事
 - [福耀科技大学新增 5 个专业：50 个学生、8 亿预算，曹德旺在下一盘什么棋？](./fuyao-university-5-new-majors) — 未来机器人、人工智能等 5 个新兴本科专业获批，曹德旺的"产业大学"用反常识的操作试探中国高等教育的边界
 - [HappyHorse：阿里用一头「快乐小马」重新定义了 AI 视频生成](./happyhorse-alibaba-ai-video) — 匿名登顶、音画同生、开源商用许可，阿里如何用架构级的差异化在 AI 视频赛道打出"产品化优先"的牌

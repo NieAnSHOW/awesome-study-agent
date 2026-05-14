@@ -615,6 +615,8 @@ export default withMermaid(defineConfig({
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '01-ai-agent-picks/' },
+                  { text: 'MiMo V2.5 Pro 登顶 DesignArena 开源前三', link: '01-ai-agent-picks/mimo-v2.5-pro-designarena-top3' },
+                  { text: 'AI Native 研发组织何去何从', link: '01-ai-agent-picks/ai-native-rd-organization' },
                   { text: 'Codex Chrome 扩展', link: '01-ai-agent-picks/codex-chrome-extension' },
                   { text: '福耀科大新增 5 个新专业', link: '01-ai-agent-picks/fuyao-university-5-new-majors' },
                   { text: 'HappyHorse：阿里重新定义 AI 视频生成', link: '01-ai-agent-picks/happyhorse-alibaba-ai-video' },

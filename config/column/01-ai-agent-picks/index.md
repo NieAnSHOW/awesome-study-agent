@@ -4,6 +4,7 @@
 
 ## 文章列表
 
+- [腾讯开源 Agent Memory：符号化短期记忆 + 分层长期记忆，Token 省 61%](./tencentdb-agent-memory) — 不是存更多，是存更聪明。Mermaid 画布替代过程日志、L0-L3 四层记忆金字塔、白盒可调试——腾讯云数据库团队开源了一套让 Agent 真正"记住你"的记忆系统
 - [MiMo V2.5 Pro 登顶 DesignArena 开源前三](./mimo-v2.5-pro-designarena-top3) — 小米的大模型在前端编码上追平 Claude Sonnet 4.6，开源第三，MIT 协议，Token 效率高 40-60%。手机厂造的大模型，为什么让硅谷坐不住了
 - [AI Native 时代，研发组织何去何从？](./ai-native-rd-organization) — 工程师写代码时间从 30% 降到 5%，编码效率 10 倍但交付只提升 2 到 3 倍。当 AI 能写代码之后，研发组织到底是为什么存在的？
 - [Codex 钻进浏览器了：400 万周活用户、8 倍增长，OpenAI 在布什么局？](./codex-chrome-extension) — Chrome 扩展让 AI Agent 直接用你的登录态操作网站，后台并行，不抢浏览器。三层工具体系 + 逐站授权，Codex 在做一件更大的事
@@ -21,3 +22,4 @@
 - [工信部 AI 伦理审查先导计划启动：做 AI 产品的人，该关心什么](./miit-ai-ethics-pilot) — 10 省份、9 领域、20+ 家企业、5 项以上标准——工信部 AI 伦理审查从纸面到地面，独立开发者现在该做什么
 - [Codex 学会了用你的电脑：Computer Use 把 AI Agent 从代码框拖到了整个桌面](./openai-codex-computer-use) — 独立光标、双模态架构、逐应用授权——OpenAI 给 Codex 加的 Computer Use 不是屏幕自动化工具，而是重新定义 AI Agent 的行动空间
 - [吴恩达：AI 不会带来"失业末日"，而是一场"就业狂欢"](./andrew-ng-ai-jobapalooza) — "AI 就业末日"叙事背后是 AI 实验室、SaaS 定价和企业公关的利益共谋。吴恩达用数据和历史证明：杰文斯悖论才是 AI 时代就业的底层逻辑
+- [Kimi WebBridge：一个浏览器扩展，让所有 AI Agent 共用同一双"真手"](./kimi-webbridge) — 不是又一个独占的 AI 浏览器插件，Kimi 给 Claude Code、Cursor、Codex、Hermes、OpenClaw 等等搭了同一座桥。装上扩展，所有 Agent 都能用你浏览器的登录态干活

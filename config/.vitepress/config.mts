@@ -615,6 +615,7 @@ export default withMermaid(defineConfig({
                 collapsed: true,
                 items: [
                   { text: '模块介绍', link: '01-ai-agent-picks/' },
+                  { text: '腾讯开源 Agent Memory', link: '01-ai-agent-picks/tencentdb-agent-memory' },
                   { text: 'MiMo V2.5 Pro 登顶 DesignArena 开源前三', link: '01-ai-agent-picks/mimo-v2.5-pro-designarena-top3' },
                   { text: 'AI Native 研发组织何去何从', link: '01-ai-agent-picks/ai-native-rd-organization' },
                   { text: 'Codex Chrome 扩展', link: '01-ai-agent-picks/codex-chrome-extension' },
@@ -632,6 +633,7 @@ export default withMermaid(defineConfig({
                   { text: '宇树 GD01 载人变形机甲', link: '01-ai-agent-picks/unitree-gd01-mecha' },
                   { text: 'Codex Computer Use', link: '01-ai-agent-picks/openai-codex-computer-use' },
                   { text: '吴恩达：AI 就业狂欢', link: '01-ai-agent-picks/andrew-ng-ai-jobapalooza' },
+                  { text: 'Kimi WebBridge：Agent 浏览器桥', link: '01-ai-agent-picks/kimi-webbridge' },
                 ]
               },
               {
